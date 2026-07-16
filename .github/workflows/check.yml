@@ -1,0 +1,87 @@
+name: Check Vendor Blobs and Generate Unregistered Files Report
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-blobs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Copy files to vendor/sts/a03br
+        run: |
+          mkdir -p vendor/sts/a03br
+          cp -r ./* vendor/sts/a03br/ 2>/dev/null || true
+          # Ensure the .mk file is in the correct location
+          if [ -f "a03br-vendor-blobs.mk" ]; then
+            cp a03br-vendor-blobs.mk vendor/sts/a03br/
+          else
+            echo "Error: a03br-vendor-blobs.mk not found in repository root"
+            exit 1
+          fi
+
+      - name: Extract registered files from .mk and list repo files
+        run: |
+          cat <<EOF > check_blobs.py
+          import os
+          import re
+
+          mk_file = 'vendor/sts/a03br/a03br-vendor-blobs.mk'
+          repo_dir = 'vendor/sts/a03br'
+
+          registered = set()
+          try:
+              with open(mk_file, 'r') as f:
+                  for line in f:
+                      line = line.strip()
+                      if line.startswith('vendor/sts/a03br') and ':' in line:
+                          path = line.split(':')[0].strip()
+                          registered.add(path)
+          except FileNotFoundError:
+              print(f"Error: {mk_file} not found")
+              exit(1)
+
+          repo_files = set()
+          for root, dirs, files in os.walk(repo_dir):
+              for file in files:
+                  full_path = os.path.join(root, file)
+                  rel_path = os.path.join('vendor/sts/a03br', os.path.relpath(full_path, repo_dir))
+                  if rel_path != mk_file and not rel_path.startswith('.git/'):
+                      repo_files.add(rel_path)
+
+          unregistered = repo_files - registered
+          unregistered_count = len(unregistered)
+
+          with open('unregistered_files.txt', 'w') as out:
+              out.write(f"Total files in repository directory: {len(repo_files)}\n")
+              out.write(f"Registered in .mk: {len(registered)}\n")
+              out.write(f"Unregistered count: {unregistered_count}\n\n")
+              out.write("Unregistered files:\n")
+              for file in sorted(unregistered):
+                  out.write(f"{file}\n")
+
+          print(f"Unregistered files saved to unregistered_files.txt")
+          print(f"Total repo files: {len(repo_files)}")
+          print(f"Matches .mk registered: {len(registered) == len(repo_files)}")
+          EOF
+
+          python check_blobs.py
+
+      - name: Upload report to artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: unregistered-files-report
+          path: unregistered_files.txt
