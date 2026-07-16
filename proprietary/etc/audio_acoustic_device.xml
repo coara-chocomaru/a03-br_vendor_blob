@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- BOARD_VOLUME_CALIBRATION -->
+<MarvellSWVolCalibrationCoef>
+    <Version>1.2</Version>
+    <DeviceList>
+        <!--output devices-->
+        <Device name="AUDIO_DEVICE_OUT_EARPIECE"                  value="0x1" />
+        <Device name="AUDIO_DEVICE_OUT_SPEAKER"                   value="0x2" />
+        <Device name="AUDIO_DEVICE_OUT_WIRED_HEADSET"             value="0x4" />
+        <Device name="AUDIO_DEVICE_OUT_WIRED_HEADPHONE"           value="0x8" />
+        <Device name="AUDIO_DEVICE_OUT_BLUETOOTH_SCO"             value="0x10" />
+        <Device name="AUDIO_DEVICE_OUT_BLUETOOTH_SCO_HEADSET"     value="0x20" />
+        <Device name="AUDIO_DEVICE_OUT_BLUETOOTH_SCO_CARKIT"      value="0x40" />
+        <Device name="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP"            value="0x80" />
+        <Device name="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_HEADPHONES" value="0x100" />
+        <Device name="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_SPEAKER"    value="0x200" />
+        <Device name="AUDIO_DEVICE_OUT_AUX_DIGITAL"               value="0x400" />
+        <Device name="AUDIO_DEVICE_OUT_ANLG_DOCK_HEADSET"         value="0x800" />
+        <Device name="AUDIO_DEVICE_OUT_DGTL_DOCK_HEADSET"         value="0x1000" />
+        <Device name="AUDIO_DEVICE_OUT_USB_ACCESSORY"             value="0x2000" />
+        <Device name="AUDIO_DEVICE_OUT_USB_DEVICE"                value="0x4000" />
+        <Device name="AUDIO_DEVICE_OUT_REMOTE_SUBMIX"             value="0x8000" />
+        <Device name="AUDIO_DEVICE_OUT_FM_HEADPHONE"              value="0x10000" />
+        <Device name="AUDIO_DEVICE_OUT_FM_SPEAKER"                value="0x20000" />
+        <Device name="AUDIO_DEVICE_OUT_FM_TRANSMITTER"            value="0x40000" />
+        <Device name="AUDIO_DEVICE_OUT_DEFAULT"                   value="0x40000000" />
+        <!--Device name="AUDIO_DEVICE_OUT_ALL" -->
+
+        <!--input devices-->
+        <Device name="AUDIO_DEVICE_IN_COMMUNICATION"              value="0x80000001" />
+        <Device name="AUDIO_DEVICE_IN_AMBIENT"                    value="0x80000002" />
+        <Device name="AUDIO_DEVICE_IN_BUILTIN_MIC"                value="0x80000004" />
+        <Device name="AUDIO_DEVICE_IN_BLUETOOTH_SCO_HEADSET"      value="0x80000008" />
+        <Device name="AUDIO_DEVICE_IN_WIRED_HEADSET"              value="0x80000010" />
+        <Device name="AUDIO_DEVICE_IN_AUX_DIGITAL"                value="0x80000020" />
+        <Device name="AUDIO_DEVICE_IN_VOICE_CALL"                 value="0x80000040" />
+        <Device name="AUDIO_DEVICE_IN_BACK_MIC"                   value="0x80000080" />
+        <Device name="AUDIO_DEVICE_IN_REMOTE_SUBMIX"              value="0x80000100" />
+        <Device name="AUDIO_DEVICE_IN_ANLG_DOCK_HEADSET"          value="0x80000200" />
+        <Device name="AUDIO_DEVICE_IN_DGTL_DOCK_HEADSET"          value="0x80000400" />
+        <Device name="AUDIO_DEVICE_IN_USB_ACCESSORY"              value="0x80000800" />
+        <Device name="AUDIO_DEVICE_IN_USB_DEVICE"                 value="0x80001000" />
+        <Device name="AUDIO_DEVICE_IN_VT_MIC"                     value="0x80002000" />
+        <Device name="AUDIO_DEVICE_IN_FMRADIO"                    value="0x80004000" />
+        <Device name="AUDIO_DEVICE_IN_DEFAULT"                    value="0xc0000000" />
+        <!--Device name="DEVICE_IN_ALL"-->
+    </DeviceList>
+
+</MarvellSWVolCalibrationCoef>
+

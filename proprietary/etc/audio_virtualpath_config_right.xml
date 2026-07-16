@@ -1,0 +1,1049 @@
+<?xml version="1.0"?>
+<MarvellAudioPathConfiguration>
+    <AudioPath identifier="HiFi1PlaybackToSpeaker">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="PMIC">
+                <!-- Register 0x61 0x0C -->
+                <Register field="DIG_GAIN" misc="shared"/>
+                <!-- Register 0x62 0x20 -->
+                <Register field="ANA_GAIN" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x66 0xb6 -->
+                <Register field="VOL_SEL_4" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x194 0x80 -->
+                <Register field="D1IN1_2INMIX[7:0]"/>
+                <!-- Register 0x108 0xebeb00 -->
+                <Register field="DSP1_DAC_LEFT_VOL[7:0]" misc="shared"/>
+                <Register field="DSP1_DAC_RIGHT_VOL[7:0]" misc="shared"/>
+                <!-- Register 0x100 0x10 -->
+                <Register field="DSP1_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi1PlaybackToStereoSpeaker">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="PMIC">
+                <!-- Register 0x61 0x0C -->
+                <Register field="DIG_GAIN" misc="shared"/>
+                <!-- Register 0x62 0x20 -->
+                <Register field="ANA_GAIN" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x67 0xb6 -->
+                <Register field="VOL_SEL_4" misc="shared"/>
+                <!-- Register 0x66 0xb6 -->
+                <Register field="VOL_SEL_3" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x194 0x80 -->
+                <Register field="D1IN1_2INMIX[7:0]"/>
+                <!-- Register 0x108 0xebeb00 -->
+                <Register field="DSP1_DAC_LEFT_VOL[7:0]" misc="shared"/>
+                <Register field="DSP1_DAC_RIGHT_VOL[7:0]" misc="shared"/>
+                <!-- Register 0x100 0x10 -->
+                <Register field="DSP1_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi1PlaybackToHeadphone">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x65 0xb6 -->
+                <Register field="VOL_SEL_2" misc="shared"/>
+                <!-- Register 0x64 0xb6 -->
+                <Register field="VOL_SEL_1" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x294 0x80 -->
+                <Register field="D2IN1_2INMIX[7:0]"/>
+                <!-- Register 0x208 0xebeb00 -->
+                <Register field="DSP2_DAC_LEFT_VOL[7:0]" misc="shared"/>
+                <Register field="DSP2_DAC_RIGHT_VOL[7:0]" misc="shared"/>
+                <!-- Register 0x200 0x10 -->
+                <Register field="DSP2_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi1PlaybackToSpeakerAndHeadphone">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="PMIC">
+                <!-- Register 0x61 0x0C -->
+                <Register field="DIG_GAIN"/>
+                <!-- Register 0x62 0x20 -->
+                <Register field="ANA_GAIN"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x66 0xb6 -->
+                <Register field="VOL_SEL_4"/>
+                <!-- Register 0x65 0xb6 -->
+                <Register field="VOL_SEL_2"/>
+                <!-- Register 0x64 0xb6 -->
+                <Register field="VOL_SEL_1"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x194 0x80 -->
+                <Register field="D1IN1_2INMIX[7:0]"/>
+                <!-- Register 0x108 0xebeb00 -->
+                <Register field="DSP1_DAC_LEFT_VOL[7:0]"/>
+                <Register field="DSP1_DAC_RIGHT_VOL[7:0]"/>
+                <!-- Register 0x100 0x10 -->
+                <Register field="DSP1_DAC_VOLUME_UPDATE" value="1"/>
+                <!-- Register 0x294 0x80 -->
+                <Register field="D2IN1_2INMIX[7:0]"/>
+                <!-- Register 0x208 0xebeb00 -->
+                <Register field="DSP2_DAC_LEFT_VOL[7:0]"/>
+                <Register field="DSP2_DAC_RIGHT_VOL[7:0]"/>
+                <!-- Register 0x200 0x10 -->
+                <Register field="DSP2_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi1PlaybackToStereoSpeakerAndHeadphone">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="PMIC">
+                <!-- Register 0x61 0x0C -->
+                <Register field="DIG_GAIN"/>
+                <!-- Register 0x62 0x20 -->
+                <Register field="ANA_GAIN"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x67 0xb6 -->
+                <Register field="VOL_SEL_4"/>
+                <!-- Register 0x66 0xb6 -->
+                <Register field="VOL_SEL_3"/>
+                <!-- Register 0x65 0xb6 -->
+                <Register field="VOL_SEL_2"/>
+                <!-- Register 0x64 0xb6 -->
+                <Register field="VOL_SEL_1"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x194 0x80 -->
+                <Register field="D1IN1_2INMIX[7:0]"/>
+                <!-- Register 0x108 0xebeb00 -->
+                <Register field="DSP1_DAC_LEFT_VOL[7:0]"/>
+                <Register field="DSP1_DAC_RIGHT_VOL[7:0]"/>
+                <!-- Register 0x100 0x10 -->
+                <Register field="DSP1_DAC_VOLUME_UPDATE" value="1"/>
+                <!-- Register 0x294 0x80 -->
+                <Register field="D2IN1_2INMIX[7:0]"/>
+                <!-- Register 0x208 0xebeb00 -->
+                <Register field="DSP2_DAC_LEFT_VOL[7:0]"/>
+                <Register field="DSP2_DAC_RIGHT_VOL[7:0]"/>
+                <!-- Register 0x200 0x10 -->
+                <Register field="DSP2_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi1PlaybackToEarpiece">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x64 0xb6 -->
+                <Register field="VOL_SEL_1" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x294 0x80 -->
+                <Register field="D2IN1_2INMIX[7:0]"/>
+                <!-- Register 0x208 0xebeb00 -->
+                <Register field="DSP2_DAC_LEFT_VOL[7:0]" misc="shared"/>
+                <Register field="DSP2_DAC_RIGHT_VOL[7:0]" misc="shared"/>
+                <!-- Register 0x200 0x10 -->
+                <Register field="DSP2_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi1PlaybackToBTNB">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x294 0x80 -->
+                <Register field="D2IN1_2INMIX[7:0]"/>
+                <!-- Register 0x208 0xebeb00 -->
+                <Register field="DSP2_DAC_LEFT_VOL[7:0]" misc="shared"/>
+                <Register field="DSP2_DAC_RIGHT_VOL[7:0]" misc="shared"/>
+                <!-- Register 0x200 0x10 -->
+                <Register field="DSP2_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi2PlaybackToSpeaker">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="PMIC">
+                <!-- Register 0x61 0x0C -->
+                <Register field="DIG_GAIN" misc="shared"/>
+                <!-- Register 0x62 0x20 -->
+                <Register field="ANA_GAIN" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x66 0xb6 -->
+                <Register field="VOL_SEL_4" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x194 0x80000000 -->
+                <Register field="D1IN4_2INMIX[7:0]"/>
+                <!-- Register 0x108 0xebeb00 -->
+                <Register field="DSP1_DAC_LEFT_VOL[7:0]" misc="shared"/>
+                <Register field="DSP1_DAC_RIGHT_VOL[7:0]" misc="shared"/>
+                <!-- Register 0x100 0x10 -->
+                <Register field="DSP1_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi2PlaybackToStereoSpeaker">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="PMIC">
+                <!-- Register 0x61 0x0C -->
+                <Register field="DIG_GAIN" misc="shared"/>
+                <!-- Register 0x62 0x20 -->
+                <Register field="ANA_GAIN" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x67 0xb6 -->
+                <Register field="VOL_SEL_4" misc="shared"/>
+                <!-- Register 0x66 0xb6 -->
+                <Register field="VOL_SEL_3" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x194 0x80000000 -->
+                <Register field="D1IN4_2INMIX[7:0]"/>
+                <!-- Register 0x108 0xebeb00 -->
+                <Register field="DSP1_DAC_LEFT_VOL[7:0]" misc="shared"/>
+                <Register field="DSP1_DAC_RIGHT_VOL[7:0]" misc="shared"/>
+                <!-- Register 0x100 0x10 -->
+                <Register field="DSP1_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi2PlaybackToHeadphone">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x65 0xb6 -->
+                <Register field="VOL_SEL_2" misc="shared"/>
+                <!-- Register 0x64 0xb6 -->
+                <Register field="VOL_SEL_1" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x294 0x80000000 -->
+                <Register field="D2IN4_2INMIX[7:0]"/>
+                <!-- Register 0x208 0xebeb00 -->
+                <Register field="DSP2_DAC_LEFT_VOL[7:0]" misc="shared"/>
+                <Register field="DSP2_DAC_RIGHT_VOL[7:0]" misc="shared"/>
+                <!-- Register 0x200 0x10 -->
+                <Register field="DSP2_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi2PlaybackToSpeakerAndHeadphone">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="PMIC">
+                <!-- Register 0x61 0x0C -->
+                <Register field="DIG_GAIN"/>
+                <!-- Register 0x62 0x20 -->
+                <Register field="ANA_GAIN"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x66 0xb6 -->
+                <Register field="VOL_SEL_4"/>
+                <!-- Register 0x65 0xb6 -->
+                <Register field="VOL_SEL_2"/>
+                <!-- Register 0x64 0xb6 -->
+                <Register field="VOL_SEL_1"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x194 0x80000000 -->
+                <Register field="D1IN4_2INMIX[7:0]"/>
+                <!-- Register 0x108 0xebeb00 -->
+                <Register field="DSP1_DAC_LEFT_VOL[7:0]"/>
+                <Register field="DSP1_DAC_RIGHT_VOL[7:0]"/>
+                <!-- Register 0x100 0x10 -->
+                <Register field="DSP1_DAC_VOLUME_UPDATE" value="1"/>
+                <!-- Register 0x294 0x80000000 -->
+                <Register field="D2IN4_2INMIX[7:0]"/>
+                <!-- Register 0x208 0xebeb00 -->
+                <Register field="DSP2_DAC_LEFT_VOL[7:0]"/>
+                <Register field="DSP2_DAC_RIGHT_VOL[7:0]"/>
+                <!-- Register 0x200 0x10 -->
+                <Register field="DSP2_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi2PlaybackToStereoSpeakerAndHeadphone">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="PMIC">
+                <!-- Register 0x61 0x0C -->
+                <Register field="DIG_GAIN"/>
+                <!-- Register 0x62 0x20 -->
+                <Register field="ANA_GAIN"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x67 0xb6 -->
+                <Register field="VOL_SEL_4"/>
+                <!-- Register 0x66 0xb6 -->
+                <Register field="VOL_SEL_3"/>
+                <!-- Register 0x65 0xb6 -->
+                <Register field="VOL_SEL_2"/>
+                <!-- Register 0x64 0xb6 -->
+                <Register field="VOL_SEL_1"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x194 0x80000000 -->
+                <Register field="D1IN4_2INMIX[7:0]"/>
+                <!-- Register 0x108 0xebeb00 -->
+                <Register field="DSP1_DAC_LEFT_VOL[7:0]"/>
+                <Register field="DSP1_DAC_RIGHT_VOL[7:0]"/>
+                <!-- Register 0x100 0x10 -->
+                <Register field="DSP1_DAC_VOLUME_UPDATE" value="1"/>
+                <!-- Register 0x294 0x80000000 -->
+                <Register field="D2IN4_2INMIX[7:0]"/>
+                <!-- Register 0x208 0xebeb00 -->
+                <Register field="DSP2_DAC_LEFT_VOL[7:0]"/>
+                <Register field="DSP2_DAC_RIGHT_VOL[7:0]"/>
+                <!-- Register 0x200 0x10 -->
+                <Register field="DSP2_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi2PlaybackToEarpiece">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x64 0xb6 -->
+                <Register field="VOL_SEL_1" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x294 0x80000000 -->
+                <Register field="D2IN4_2INMIX[7:0]"/>
+                <!-- Register 0x208 0xebeb00 -->
+                <Register field="DSP2_DAC_LEFT_VOL[7:0]" misc="shared"/>
+                <Register field="DSP2_DAC_RIGHT_VOL[7:0]" misc="shared"/>
+                <!-- Register 0x200 0x10 -->
+                <Register field="DSP2_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi2PlaybackToBTNB">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x294 0x80000000 -->
+                <Register field="D2IN4_2INMIX[7:0]"/>
+                <!-- Register 0x208 0xebeb00 -->
+                <Register field="DSP2_DAC_LEFT_VOL[7:0]" misc="shared"/>
+                <Register field="DSP2_DAC_RIGHT_VOL[7:0]" misc="shared"/>
+                <!-- Register 0x200 0x10 -->
+                <Register field="DSP2_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi2RecordFromLoopbackSDM">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x348 0x8000 -->
+                <Register field="D1AIN1_2INMIX[7:0]"/>
+                <!-- Register 0x308 0xebeb00 -->
+                <Register field="ADC_LEFT_VOL[7:0]"/>
+                <Register field="ADC_RIGHT_VOL[7:0]"/>
+                <Register field="DSP1AIN1_BOOST[1:0]"/>
+                <Register field="DSP1AIN2_BOOST[1:0]"/>
+                <!-- Register 0x300 0x10 -->
+                <Register field="ADC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi2RecordFromLoopbackPDM">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x348 0x8000 -->
+                <Register field="D1AIN1_2INMIX[7:0]"/>
+                <!-- Register 0x308 0xebeb00 -->
+                <Register field="ADC_LEFT_VOL[7:0]"/>
+                <Register field="ADC_RIGHT_VOL[7:0]"/>
+                <Register field="DSP1AIN1_BOOST[1:0]"/>
+                <Register field="DSP1AIN2_BOOST[1:0]"/>
+                <!-- Register 0x300 0x10 -->
+                <Register field="ADC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi1RecordFromLoopbackSDM">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x348 0x8000 -->
+                <Register field="D1AIN1_2INMIX[7:0]"/>
+                <!-- Register 0x308 0xebeb00 -->
+                <Register field="ADC_LEFT_VOL[7:0]"/>
+                <Register field="ADC_RIGHT_VOL[7:0]"/>
+                <Register field="DSP1AIN1_BOOST[1:0]"/>
+                <Register field="DSP1AIN2_BOOST[1:0]"/>
+                <!-- Register 0x300 0x10 -->
+                <Register field="ADC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi1RecordFromLoopbackPDM">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x348 0x8000 -->
+                <Register field="D1AIN1_2INMIX[7:0]"/>
+                <!-- Register 0x308 0xebeb00 -->
+                <Register field="ADC_LEFT_VOL[7:0]"/>
+                <Register field="ADC_RIGHT_VOL[7:0]"/>
+                <Register field="DSP1AIN1_BOOST[1:0]"/>
+                <Register field="DSP1AIN2_BOOST[1:0]"/>
+                <!-- Register 0x300 0x10 -->
+                <Register field="ADC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi1RecordFromAMic1">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x21 0x2f -->
+                <Register field="MIC1_ANA_GAIN"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x348 0x8000 -->
+                <Register field="D1AIN1_2INMIX[7:0]"/>
+                <!-- Register 0x308 0xebeb00 -->
+                <Register field="ADC_LEFT_VOL[7:0]"/>
+                <Register field="ADC_RIGHT_VOL[7:0]"/>
+                <Register field="DSP1AIN1_BOOST[1:0]"/>
+                <Register field="DSP1AIN2_BOOST[1:0]"/>
+                <!-- Register 0x300 0x10 -->
+                <Register field="ADC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi1RecordFromAMic2">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x22 0x2f -->
+                <Register field="MIC2_ANA_GAIN"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x348 0x8000 -->
+                <Register field="D1AIN1_2INMIX[7:0]"/>
+                <!-- Register 0x308 0xebeb00 -->
+                <Register field="ADC_LEFT_VOL[7:0]"/>
+                <Register field="ADC_RIGHT_VOL[7:0]"/>
+                <Register field="DSP1AIN1_BOOST[1:0]"/>
+                <Register field="DSP1AIN2_BOOST[1:0]"/>
+                <!-- Register 0x300 0x10 -->
+                <Register field="ADC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi1RecordFromDualAMic">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x21 0x2f -->
+                <Register field="MIC1_ANA_GAIN"/>
+                <!-- Register 0x22 0x2f -->
+                <Register field="MIC2_ANA_GAIN"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x348 0x8000 -->
+                <Register field="D1AIN1_2INMIX[7:0]"/>
+                <!-- Register 0x308 0xebeb00 -->
+                <Register field="ADC_LEFT_VOL[7:0]"/>
+                <Register field="ADC_RIGHT_VOL[7:0]"/>
+                <Register field="DSP1AIN1_BOOST[1:0]"/>
+                <Register field="DSP1AIN2_BOOST[1:0]"/>
+                <!-- Register 0x300 0x10 -->
+                <Register field="ADC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi1RecordFromHsMic">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x21 0x2f -->
+                <Register field="MIC1_ANA_GAIN"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x348 0x8000 -->
+                <Register field="D1AIN1_2INMIX[7:0]"/>
+                <!-- Register 0x308 0xebeb00 -->
+                <Register field="ADC_LEFT_VOL[7:0]"/>
+                <Register field="ADC_RIGHT_VOL[7:0]"/>
+                <Register field="DSP1AIN1_BOOST[1:0]"/>
+                <Register field="DSP1AIN2_BOOST[1:0]"/>
+                <!-- Register 0x300 0x10 -->
+                <Register field="ADC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi1RecordFromDMic">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x348 0x8000 -->
+                <Register field="D1AIN1_2INMIX[7:0]"/>
+                <!-- Register 0x308 0xebeb00 -->
+                <Register field="ADC_LEFT_VOL[7:0]"/>
+                <Register field="ADC_RIGHT_VOL[7:0]"/>
+                <Register field="DSP1AIN1_BOOST[1:0]"/>
+                <Register field="DSP1AIN2_BOOST[1:0]"/>
+                <!-- Register 0x300 0x10 -->
+                <Register field="ADC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="HiFi1RecordFromBTMicNB">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x348 0x8000 -->
+                <Register field="D1AIN1_2INMIX[7:0]"/>
+                <!-- Register 0x308 0xebeb00 -->
+                <Register field="ADC_LEFT_VOL[7:0]"/>
+                <Register field="ADC_RIGHT_VOL[7:0]"/>
+                <Register field="DSP1AIN1_BOOST[1:0]"/>
+                <Register field="DSP1AIN2_BOOST[1:0]"/>
+                <!-- Register 0x300 0x10 -->
+                <Register field="ADC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="VoicePlaybackToSpeaker">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="MODEM">
+                <Register field="DIGITAL_GAIN_NB"/>
+                <Register field="DIGITAL_GAIN_EXTRA"/>
+                <Register field="DIGITAL_GAIN_WB"/>
+                <Register field="DIGITAL_GAIN_EXTRA_WB"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="I2C" identifier="PMIC">
+                <!-- Register 0x61 0x0C -->
+                <Register field="DIG_GAIN" misc="shared"/>
+                <!-- Register 0x62 0x20 -->
+                <Register field="ANA_GAIN" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x66 0xb6 -->
+                <Register field="VOL_SEL_4" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x194 0x8000 -->
+                <Register field="D1IN2_2INMIX[7:0]"/>
+                <!-- Register 0x108 0xebeb00 -->
+                <Register field="DSP1_DAC_LEFT_VOL[7:0]" misc="shared"/>
+                <Register field="DSP1_DAC_RIGHT_VOL[7:0]" misc="shared"/>
+                <!-- Register 0x100 0x10 -->
+                <Register field="DSP1_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="VoicePlaybackToStereoSpeaker">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="MODEM">
+                <Register field="DIGITAL_GAIN_NB"/>
+                <Register field="DIGITAL_GAIN_EXTRA"/>
+                <Register field="DIGITAL_GAIN_WB"/>
+                <Register field="DIGITAL_GAIN_EXTRA_WB"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="I2C" identifier="PMIC">
+                <!-- Register 0x61 0x0C -->
+                <Register field="DIG_GAIN" misc="shared"/>
+                <!-- Register 0x62 0x20 -->
+                <Register field="ANA_GAIN" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x67 0xb6 -->
+                <Register field="VOL_SEL_4" misc="shared"/>
+                <!-- Register 0x66 0xb6 -->
+                <Register field="VOL_SEL_3" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x194 0x8000 -->
+                <Register field="D1IN2_2INMIX[7:0]"/>
+                <!-- Register 0x108 0xebeb00 -->
+                <Register field="DSP1_DAC_LEFT_VOL[7:0]" misc="shared"/>
+                <Register field="DSP1_DAC_RIGHT_VOL[7:0]" misc="shared"/>
+                <!-- Register 0x100 0x10 -->
+                <Register field="DSP1_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="VoicePlaybackToHeadphone">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="MODEM">
+                <Register field="DIGITAL_GAIN_NB"/>
+                <Register field="DIGITAL_GAIN_WB"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x65 0xb6 -->
+                <Register field="VOL_SEL_2" misc="shared"/>
+                <!-- Register 0x64 0xb6 -->
+                <Register field="VOL_SEL_1" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x294 0x8000 -->
+                <Register field="D2IN2_2INMIX[7:0]"/>
+                <!-- Register 0x208 0xebeb00 -->
+                <Register field="DSP2_DAC_LEFT_VOL[7:0]" misc="shared"/>
+                <Register field="DSP2_DAC_RIGHT_VOL[7:0]" misc="shared"/>
+                <!-- Register 0x200 0x10 -->
+                <Register field="DSP2_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="VoicePlaybackToEarpiece">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="MODEM">
+                <Register field="DIGITAL_GAIN_NB"/>
+                <Register field="DIGITAL_GAIN_EXTRA"/>
+                <Register field="DIGITAL_GAIN_WB"/>
+                <Register field="DIGITAL_GAIN_EXTRA_WB"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x64 0xb6 -->
+                <Register field="VOL_SEL_1" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x294 0x8000-->
+                <Register field="D2IN2_2INMIX[7:0]"/>
+                <!-- Register 0x208 0xebeb00 -->
+                <Register field="DSP2_DAC_LEFT_VOL[7:0]" misc="shared"/>
+                <Register field="DSP2_DAC_RIGHT_VOL[7:0]" misc="shared"/>
+                <!-- Register 0x200 0x10 -->
+                <Register field="DSP2_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="VoicePlaybackToBTNB">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="MODEM">
+                <Register field="DIGITAL_GAIN_NB"/>
+                <Register field="DIGITAL_GAIN_WB"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x294 0x8000 -->
+                <Register field="D2IN2_2INMIX[7:0]"/>
+                <!-- Register 0x208 0xebeb00 -->
+                <Register field="DSP2_DAC_LEFT_VOL[7:0]" misc="shared"/>
+                <Register field="DSP2_DAC_RIGHT_VOL[7:0]" misc="shared"/>
+                <!-- Register 0x200 0x10 -->
+                <Register field="DSP2_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="VoiceRecordFromAMic1">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="MODEM">
+                <Register field="DIGITAL_GAIN_NB"/>
+                <Register field="DIGITAL_GAIN_EXTRA"/>
+                <Register field="DIGITAL_GAIN_WB"/>
+                <Register field="DIGITAL_GAIN_EXTRA_WB"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x21 0x2f -->
+                <Register field="MIC1_ANA_GAIN"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x348 0x8000 -->
+                <Register field="D1AIN1_2INMIX[7:0]"/>
+                <!-- Register 0x308 0xebeb00 -->
+                <Register field="ADC_LEFT_VOL[7:0]"/>
+                <Register field="ADC_RIGHT_VOL[7:0]"/>
+                <Register field="DSP1AIN1_BOOST[1:0]"/>
+                <Register field="DSP1AIN2_BOOST[1:0]"/>
+                <!-- Register 0x300 0x10 -->
+                <Register field="ADC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="VoiceRecordFromAMic2">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="MODEM">
+                <Register field="DIGITAL_GAIN_NB"/>
+                <Register field="DIGITAL_GAIN_EXTRA"/>
+                <Register field="DIGITAL_GAIN_WB"/>
+                <Register field="DIGITAL_GAIN_EXTRA_WB"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x22 0x2f -->
+                <Register field="MIC2_ANA_GAIN"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x348 0x8000 -->
+                <Register field="D1AIN1_2INMIX[7:0]"/>
+                <!-- Register 0x308 0xebeb00 -->
+                <Register field="ADC_LEFT_VOL[7:0]"/>
+                <Register field="ADC_RIGHT_VOL[7:0]"/>
+                <Register field="DSP1AIN1_BOOST[1:0]"/>
+                <Register field="DSP1AIN2_BOOST[1:0]"/>
+                <!-- Register 0x300 0x10 -->
+                <Register field="ADC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="VoiceRecordFromDualAMic">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="MODEM">
+                <Register field="DIGITAL_GAIN_NB"/>
+                <Register field="DIGITAL_GAIN_EXTRA"/>
+                <Register field="DIGITAL_GAIN_WB"/>
+                <Register field="DIGITAL_GAIN_EXTRA_WB"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x21 0x2f -->
+                <Register field="MIC1_ANA_GAIN"/>
+                <!-- Register 0x22 0x2f -->
+                <Register field="MIC2_ANA_GAIN"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x348 0x8000 -->
+                <Register field="D1AIN1_2INMIX[7:0]"/>
+                <!-- Register 0x308 0xebeb00 -->
+                <Register field="ADC_LEFT_VOL[7:0]"/>
+                <Register field="ADC_RIGHT_VOL[7:0]"/>
+                <Register field="DSP1AIN1_BOOST[1:0]"/>
+                <Register field="DSP1AIN2_BOOST[1:0]"/>
+                <!-- Register 0x300 0x10 -->
+                <Register field="ADC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="VoiceRecordFromDMic">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="MODEM">
+                <Register field="DIGITAL_GAIN_NB"/>
+                <Register field="DIGITAL_GAIN_EXTRA"/>
+                <Register field="DIGITAL_GAIN_WB"/>
+                <Register field="DIGITAL_GAIN_EXTRA_WB"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x348 0x8000 -->
+                <Register field="D1AIN1_2INMIX[7:0]"/>
+                <!-- Register 0x308 0xebeb00 -->
+                <Register field="ADC_LEFT_VOL[7:0]"/>
+                <Register field="ADC_RIGHT_VOL[7:0]"/>
+                <Register field="DSP1AIN1_BOOST[1:0]"/>
+                <Register field="DSP1AIN2_BOOST[1:0]"/>
+                <!-- Register 0x300 0x10 -->
+                <Register field="ADC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="VoiceRecordFromHsMic">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="MODEM">
+                <Register field="DIGITAL_GAIN_NB"/>
+                <Register field="DIGITAL_GAIN_WB"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x21 0x2f -->
+                <Register field="MIC1_ANA_GAIN"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x348 0x8000 -->
+                <Register field="D1AIN1_2INMIX[7:0]"/>
+                <!-- Register 0x308 0xebeb00 -->
+                <Register field="ADC_LEFT_VOL[7:0]"/>
+                <Register field="ADC_RIGHT_VOL[7:0]"/>
+                <Register field="DSP1AIN1_BOOST[1:0]"/>
+                <Register field="DSP1AIN2_BOOST[1:0]"/>
+                <!-- Register 0x300 0x10 -->
+                <Register field="ADC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="VoiceRecordFromBTMicNB">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="MODEM">
+                <Register field="DIGITAL_GAIN_NB"/>
+                <Register field="DIGITAL_GAIN_WB"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x348 0x8000 -->
+                <Register field="D1AIN1_2INMIX[7:0]"/>
+                <!-- Register 0x308 0xebeb00 -->
+                <Register field="ADC_LEFT_VOL[7:0]"/>
+                <Register field="ADC_RIGHT_VOL[7:0]"/>
+                <Register field="DSP1AIN1_BOOST[1:0]"/>
+                <Register field="DSP1AIN2_BOOST[1:0]"/>
+                <!-- Register 0x300 0x10 -->
+                <Register field="ADC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="FMPlaybackI2SToSpeaker">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="PMIC">
+                <!-- Register 0x61 0x0C -->
+                <Register field="DIG_GAIN" misc="shared"/>
+                <!-- Register 0x62 0x20 -->
+                <Register field="ANA_GAIN" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x66 0xb6 -->
+                <Register field="VOL_SEL_4" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x194 0x800000 -->
+                <Register field="D1IN3_2INMIX[7:0]"/>
+                <!-- Register 0x108 0xebeb00 -->
+                <Register field="DSP1_DAC_LEFT_VOL[7:0]" misc="shared"/>
+                <Register field="DSP1_DAC_RIGHT_VOL[7:0]" misc="shared"/>
+                <!-- Register 0x100 0x10 -->
+                <Register field="DSP1_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE">
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x194 0x800000 -->
+                <Register field="D1IN3_2INMIX[7:0]" value="0"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="SETVOLUME">
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x194 0x800000 -->
+                <Register field="D1IN3_2INMIX[7:0]"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="FMPlaybackI2SToStereoSpeaker">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="PMIC">
+                <!-- Register 0x61 0x0C -->
+                <Register field="DIG_GAIN" misc="shared"/>
+                <!-- Register 0x62 0x20 -->
+                <Register field="ANA_GAIN" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x67 0xb6 -->
+                <Register field="VOL_SEL_4" misc="shared"/>
+                <!-- Register 0x66 0xb6 -->
+                <Register field="VOL_SEL_3" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x194 0x800000 -->
+                <Register field="D1IN3_2INMIX[7:0]"/>
+                <!-- Register 0x108 0xebeb00 -->
+                <Register field="DSP1_DAC_LEFT_VOL[7:0]" misc="shared"/>
+                <Register field="DSP1_DAC_RIGHT_VOL[7:0]" misc="shared"/>
+                <!-- Register 0x100 0x10 -->
+                <Register field="DSP1_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE">
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x194 0x800000 -->
+                <Register field="D1IN3_2INMIX[7:0]" value="0"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="SETVOLUME">
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x194 0x800000 -->
+                <Register field="D1IN3_2INMIX[7:0]"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="FMPlaybackI2SToHeadphone">
+        <Operation identifier="ENABLE">
+            <AudioComponent control_protocol="I2C" identifier="CODEC">
+                <!-- Register 0x65 0xb6 -->
+                <Register field="VOL_SEL_2" misc="shared"/>
+                <!-- Register 0x64 0xb6 -->
+                <Register field="VOL_SEL_1" misc="shared"/>
+            </AudioComponent>
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x294 0x800000 -->
+                <Register field="D2IN3_2INMIX[7:0]"/>
+                <!-- Register 0x208 0xebeb00 -->
+                <Register field="DSP2_DAC_LEFT_VOL[7:0]" misc="shared"/>
+                <Register field="DSP2_DAC_RIGHT_VOL[7:0]" misc="shared"/>
+                <!-- Register 0x200 0x10 -->
+                <Register field="DSP2_DAC_VOLUME_UPDATE" value="1"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="DISABLE">
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x294 0x800000 -->
+                <Register field="D2IN3_2INMIX[7:0]" value="0"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="SETVOLUME">
+            <AudioComponent control_protocol="APB" identifier="APU">
+                <!-- Register 0x294 0x800000 -->
+                <Register field="D2IN3_2INMIX[7:0]"/>
+            </AudioComponent>
+        </Operation>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+    <AudioPath identifier="FMI2SRecordFromFM">
+        <Operation identifier="ENABLE"/>
+        <Operation identifier="DISABLE"/>
+        <Operation identifier="SETVOLUME"/>
+        <Operation identifier="MUTE"/>
+    </AudioPath>
+
+    <AudioPath alias="HiFi1PlaybackToSpeaker" identifier="VoipPlaybackToSpeaker"/>
+    <AudioPath alias="HiFi1PlaybackToStereoSpeaker" identifier="VoipPlaybackToStereoSpeaker"/>
+    <AudioPath alias="HiFi1PlaybackToHeadphone" identifier="VoipPlaybackToHeadphone"/>
+    <AudioPath alias="HiFi1PlaybackToEarpiece" identifier="VoipPlaybackToEarpiece"/>
+    <AudioPath alias="HiFi1RecordFromAMic1" identifier="VoipRecordFromAMic1"/>
+    <AudioPath alias="HiFi1RecordFromAMic1" identifier="VoipRecordFromAMic1(Speaker Mode)"/>
+    <AudioPath alias="HiFi1RecordFromAMic2" identifier="VoipRecordFromAMic2"/>
+    <AudioPath alias="HiFi1RecordFromAMic2" identifier="VoipRecordFromAMic2(Speaker Mode)"/>
+    <AudioPath alias="HiFi1RecordFromHsMic" identifier="VoipRecordFromHsMic"/>
+    <AudioPath alias="HiFi1RecordFromDMic" identifier="VoipRecordFromDMic1"/>
+    <AudioPath alias="HiFi1RecordFromDMic" identifier="VoipRecordFromDMic2"/>
+    <AudioPath alias="HiFi1RecordFromDMic" identifier="HiFi1RecordFromDMic1"/>
+    <AudioPath alias="HiFi1RecordFromDMic" identifier="HiFi1RecordFromDMic2"/>
+    <AudioPath alias="HiFi1RecordFromDMic" identifier="HiFi1RecordFromDualDMic1"/>
+    <AudioPath alias="HiFi1PlaybackToBTNB" identifier="HiFi1PlaybackToBTNB(NREC Mode)"/>
+    <AudioPath alias="HiFi1PlaybackToBTNB" identifier="HiFi1PlaybackToBTWB"/>
+    <AudioPath alias="HiFi1PlaybackToBTNB" identifier="HiFi1PlaybackToBTWB(NREC Mode)"/>
+    <AudioPath alias="HiFi1PlaybackToBTNB" identifier="VoipPlaybackToBTNB"/>
+    <AudioPath alias="HiFi1PlaybackToBTNB" identifier="VoipPlaybackToBTNB(NREC Mode)"/>
+    <AudioPath alias="HiFi1PlaybackToBTNB" identifier="VoipPlaybackToBTWB"/>
+    <AudioPath alias="HiFi1PlaybackToBTNB" identifier="VoipPlaybackToBTWB(NREC Mode)"/>
+    <AudioPath alias="HiFi1RecordFromBTMicNB" identifier="HiFi1RecordFromBTMicNB(NREC Mode)"/>
+    <AudioPath alias="HiFi1RecordFromBTMicNB" identifier="HiFi1RecordFromBTMicWB"/>
+    <AudioPath alias="HiFi1RecordFromBTMicNB" identifier="HiFi1RecordFromBTMicWB(NREC Mode)"/>
+    <AudioPath alias="HiFi1RecordFromBTMicNB" identifier="VoipRecordFromBTMicNB"/>
+    <AudioPath alias="HiFi1RecordFromBTMicNB" identifier="VoipRecordFromBTMicNB(NREC Mode)"/>
+    <AudioPath alias="HiFi1RecordFromBTMicNB" identifier="VoipRecordFromBTMicWB"/>
+    <AudioPath alias="HiFi1RecordFromBTMicNB" identifier="VoipRecordFromBTMicWB(NREC Mode)"/>
+    <AudioPath alias="HiFi2PlaybackToBTNB" identifier="HiFi2PlaybackToBTWB"/>
+    <AudioPath alias="VoicePlaybackToBTNB" identifier="VoicePlaybackToBTNB(NREC Mode)"/>
+    <AudioPath alias="VoicePlaybackToBTNB" identifier="VoicePlaybackToBTWB"/>
+    <AudioPath alias="VoicePlaybackToBTNB" identifier="VoicePlaybackToBTWB(NREC Mode)"/>
+    <AudioPath alias="VoiceRecordFromBTMicNB" identifier="VoiceRecordFromBTMicNB(NREC Mode)"/>
+    <AudioPath alias="VoiceRecordFromBTMicNB" identifier="VoiceRecordFromBTMicWB"/>
+    <AudioPath alias="VoiceRecordFromBTMicNB" identifier="VoiceRecordFromBTMicWB(NREC Mode)"/>
+    <AudioPath alias="VoiceRecordFromDMic" identifier="VoiceRecordFromDMic1"/>
+    <AudioPath alias="VoiceRecordFromDMic" identifier="VoiceRecordFromDMic2"/>
+    <AudioPath alias="VoiceRecordFromDMic1" identifier="VoiceRecordFromDualDMic1"/>
+
+    <AudioPath alias="VoicePlaybackToHeadphone" identifier="VoicePlaybackToTty"/>
+    <AudioPath alias="VoicePlaybackToSpeaker" identifier="VoicePlaybackToTtyHcoSpeaker"/>
+    <AudioPath alias="VoicePlaybackToStereoSpeaker" identifier="VoicePlaybackToTtyHcoStereoSpeaker"/>
+    <AudioPath alias="VoiceRecordFromHsMic" identifier="VoiceRecordFromTty"/>
+    <AudioPath alias="VoiceRecordFromAMic1" identifier="VoiceRecordFromAMic1(Speaker Mode)"/>
+    <AudioPath alias="VoiceRecordFromAMic1" identifier="VoiceRecordFromTtyVcoAMic1"/>
+    <AudioPath alias="VoiceRecordFromAMic2" identifier="VoiceRecordFromAMic2(Speaker Mode)"/>
+    <AudioPath alias="VoiceRecordFromAMic2" identifier="VoiceRecordFromTtyVcoAMic2"/>
+    <AudioPath alias="VoiceRecordFromDualAMic" identifier="VoiceRecordFromTtyVcoDualAMic"/>
+    <AudioPath alias="VoiceRecordFromDualDMic1" identifier="VoiceRecordFromTtyVcoDualDMic1"/>
+
+    <AudioPath alias="HiFi1RecordFromAMic1" identifier="HiFi1RecognitionRecordFromAMic1"/>
+    <AudioPath alias="HiFi1RecordFromAMic2" identifier="HiFi1RecognitionRecordFromAMic2"/>
+    <AudioPath alias="HiFi1RecordFromHsMic" identifier="HiFi1RecognitionRecordFromHsMic"/>
+    <AudioPath alias="HiFi1RecordFromDMic" identifier="HiFi1RecognitionRecordFromDMic1"/>
+    <AudioPath alias="HiFi1RecordFromDMic" identifier="HiFi1RecognitionRecordFromDMic2"/>
+    <AudioPath alias="HiFi1RecordFromDualDMic1" identifier="HiFi1RecognitionRecordFromDualDMic1"/>
+    <AudioPath alias="HiFi1RecordFromBTMicNB" identifier="HiFi1RecognitionRecordFromBTMicNB"/>
+    <AudioPath alias="HiFi1RecordFromBTMicNB" identifier="HiFi1RecognitionRecordFromBTMicNB(NREC Mode)"/>
+    <AudioPath alias="HiFi1RecordFromBTMicNB" identifier="HiFi1RecognitionRecordFromBTMicWB"/>
+    <AudioPath alias="HiFi1RecordFromBTMicNB" identifier="HiFi1RecognitionRecordFromBTMicWB(NREC Mode)"/>
+    <AudioPath alias="HiFi1RecordFromDualAMic" identifier="HiFi1RecognitionRecordFromDualAMic"/>
+    <AudioPath alias="HiFi1RecordFromDualAMic" identifier="VoipRecordFromDualAMic"/>
+
+</MarvellAudioPathConfiguration>

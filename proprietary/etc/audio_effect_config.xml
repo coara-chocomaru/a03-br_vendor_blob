@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AudioEffectConfiguration>
+    <Version>1.0</Version>
+    <!--default parameter table for all devices and sample rate-->
+    <AudioEffect name="DRC" on="false">
+        <Gain offset="0" threshold="-6553600" compress="true" ratio="65536"/>
+        <AttackTime>2</AttackTime><!--ms-->
+        <ReleaseTime>400</ReleaseTime><!--ms-->
+    </AudioEffect>
+    <!--default parameter table for all devices and sample rate-->
+    <AudioEffect name="EQ">
+        <band on ="false" desc="band1">
+                <Parameter>1</Parameter>
+                <Parameter>2</Parameter>
+                <Parameter>3</Parameter>
+                <Parameter>4</Parameter>
+                <Parameter>5</Parameter>
+                <Parameter>6</Parameter>
+        </band>
+        <band on ="false" desc="band2">
+                <Parameter>1</Parameter>
+                <Parameter>2</Parameter>
+                <Parameter>3</Parameter>
+                <Parameter>4</Parameter>
+                <Parameter>5</Parameter>
+                <Parameter>6</Parameter>
+        </band>
+        <band on ="false" desc="band3">
+                <Parameter>1</Parameter>
+                <Parameter>2</Parameter>
+                <Parameter>3</Parameter>
+                <Parameter>4</Parameter>
+                <Parameter>5</Parameter>
+                <Parameter>6</Parameter>
+        </band>
+        <band on ="false" desc="band4">
+                <Parameter>1</Parameter>
+                <Parameter>2</Parameter>
+                <Parameter>3</Parameter>
+                <Parameter>4</Parameter>
+                <Parameter>5</Parameter>
+                <Parameter>6</Parameter>
+        </band>
+        <band on ="false" desc="band5">
+                <Parameter>1</Parameter>
+                <Parameter>2</Parameter>
+                <Parameter>3</Parameter>
+                <Parameter>4</Parameter>
+                <Parameter>5</Parameter>
+                <Parameter>6</Parameter>
+        </band>
+        <band on ="false" desc="band6">
+                <Parameter>1</Parameter>
+                <Parameter>2</Parameter>
+                <Parameter>3</Parameter>
+                <Parameter>4</Parameter>
+                <Parameter>5</Parameter>
+                <Parameter>6</Parameter>
+        </band>
+        <band on ="false" desc="band7">
+                <Parameter>1</Parameter>
+                <Parameter>2</Parameter>
+                <Parameter>3</Parameter>
+                <Parameter>4</Parameter>
+                <Parameter>5</Parameter>
+                <Parameter>6</Parameter>
+        </band>
+        <band on ="false" desc="band8">
+                <Parameter>1</Parameter>
+                <Parameter>2</Parameter>
+                <Parameter>3</Parameter>
+                <Parameter>4</Parameter>
+                <Parameter>5</Parameter>
+                <Parameter>6</Parameter>
+        </band>
+    </AudioEffect>
+    <!--only for earpiece and 44.1khz sample rate-->
+    <AudioEffect name="EQ" device="AUDIO_DEVICE_OUT_EARPIECE" sampleRate="44100">
+        <band on ="false" desc="band1">
+                <Parameter>1</Parameter>
+                <Parameter>2</Parameter>
+                <Parameter>3</Parameter>
+                <Parameter>4</Parameter>
+                <Parameter>5</Parameter>
+                <Parameter>6</Parameter>
+        </band>
+        <band on ="false" desc="band2">
+                <Parameter>1</Parameter>
+                <Parameter>2</Parameter>
+                <Parameter>3</Parameter>
+                <Parameter>4</Parameter>
+                <Parameter>5</Parameter>
+                <Parameter>6</Parameter>
+        </band>
+        <band on ="false" desc="band3">
+                <Parameter>1</Parameter>
+                <Parameter>2</Parameter>
+                <Parameter>3</Parameter>
+                <Parameter>4</Parameter>
+                <Parameter>5</Parameter>
+                <Parameter>6</Parameter>
+        </band>
+        <band on ="false" desc="band4">
+                <Parameter>1</Parameter>
+                <Parameter>2</Parameter>
+                <Parameter>3</Parameter>
+                <Parameter>4</Parameter>
+                <Parameter>5</Parameter>
+                <Parameter>6</Parameter>
+        </band>
+        <band on ="false" desc="band5">
+                <Parameter>1</Parameter>
+                <Parameter>2</Parameter>
+                <Parameter>3</Parameter>
+                <Parameter>4</Parameter>
+                <Parameter>5</Parameter>
+                <Parameter>6</Parameter>
+        </band>
+        <band on ="false" desc="band6">
+                <Parameter>1</Parameter>
+                <Parameter>2</Parameter>
+                <Parameter>3</Parameter>
+                <Parameter>4</Parameter>
+                <Parameter>5</Parameter>
+                <Parameter>6</Parameter>
+        </band>
+        <band on ="false" desc="band7">
+                <Parameter>1</Parameter>
+                <Parameter>2</Parameter>
+                <Parameter>3</Parameter>
+                <Parameter>4</Parameter>
+                <Parameter>5</Parameter>
+                <Parameter>6</Parameter>
+        </band>
+        <band on ="false" desc="band8">
+                <Parameter>1</Parameter>
+                <Parameter>2</Parameter>
+                <Parameter>3</Parameter>
+                <Parameter>4</Parameter>
+                <Parameter>5</Parameter>
+                <Parameter>6</Parameter>
+        </band>
+    </AudioEffect>
+    <!--default parameter table for all devices and sample rate-->
+    <AudioEffect name="AGC" device="AUDIO_DEVICE_IN_BUILTIN_MIC" on="false">
+        <Level value="-1020"/>
+        <MaxRMS value ="0"/>
+        <MinEnvelope value ="-10200"/>
+    </AudioEffect>
+</AudioEffectConfiguration>

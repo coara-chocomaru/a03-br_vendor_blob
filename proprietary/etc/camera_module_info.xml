@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CameraModule>
+
+    <ModuleConfig>
+        <!--
+             "auto" means use the first defined module as sensor's module name
+             "semco" means use name semco as sensor's module name
+             "samsung.sr544,semco" (RECOMMENDED) means if detected sensor is samsung.sr544, use semco as modelue name,
+             if detected sensor is not samsung.sr544, will use "auto" setting
+        -->
+        <BackModule>auto</BackModule>
+        <FrontModule>auto</FrontModule>
+    </ModuleConfig>
+
+</CameraModule>
