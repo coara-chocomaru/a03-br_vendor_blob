@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PowerHintService>
+    <MultiInstance level="0" enable="0">
+        <scenario>
+            <media>
+                <state>on</state>
+                <multi_instance>enable</multi_instance>
+            </media>
+        </scenario>
+        <action>
+            <vpu>
+                <unit id="0">
+                    <setspeed>100%</setspeed>
+                </unit>
+            </vpu>
+            <vpu>
+                <unit id="1">
+                    <setspeed>100%</setspeed>
+                </unit>
+            </vpu>
+        </action>
+    </MultiInstance>
+
+    <VideoPlay level="0" enable="0">
+        <scenario>
+            <media>
+                <state>on</state>
+                <type>decode</type>
+            </media>
+        </scenario>
+        <action>
+            <vpu>
+                <unit id="0">
+                    <setspeed>208000</setspeed>
+                </unit>
+            </vpu>
+        </action>
+    </VideoPlay>
+
+    <VideoPlayHigh level="0" enable="0">
+        <scenario>
+            <media>
+                <state>on</state>
+                <type>decode</type>
+                <resolution>1080p</resolution>
+            </media>
+        </scenario>
+        <action>
+            <vpu>
+                <unit id="0">
+                    <setspeed>312000</setspeed>
+                </unit>
+            </vpu>
+        </action>
+    </VideoPlayHigh>
+
+    <Camcorder level="0" enable="1">
+        <scenario>
+            <media>
+                <state>on</state>
+                <type>encode</type>
+            </media>
+        </scenario>
+        <action>
+            <ddr>
+                <minfreq>312000</minfreq>
+                <maxfreq>100%</maxfreq>
+            </ddr>
+            <vpu>
+                <unit id="1">
+                    <setspeed>312000</setspeed>
+                </unit>
+            </vpu>
+        </action>
+    </Camcorder>
+
+    <CameraBackZoom level="0" enable="1">
+        <scenario>
+            <camera>
+                <id>back</id>
+                <event>zoom</event>
+                <state>on</state>
+            </camera>
+        </scenario>
+        <action>
+            <cpu>
+                <unit id="0">
+                    <minfreq>624000</minfreq>
+                    <maxfreq>100%</maxfreq>
+                    <governor>interactive</governor>
+                </unit>
+            </cpu>
+            <ddr>
+                <minfreq>312000</minfreq>
+                <maxfreq>100%</maxfreq>
+            </ddr>
+            <gpu>
+                <unit id="0">
+                    <minfreq>416000</minfreq>
+                    <maxfreq>100%</maxfreq>
+                    <governor>ondemand</governor>
+                </unit>
+            </gpu>
+        </action>
+    </CameraBackZoom>
+
+    <CameraBackBurst level="0" enable="1">
+        <scenario>
+            <camera>
+                <id>back</id>
+                <event>burst</event>
+                <state>on</state>
+            </camera>
+        </scenario>
+        <action>
+            <ddr>
+                <minfreq>100%</minfreq>
+                <maxfreq>100%</maxfreq>
+            </ddr>
+        </action>
+    </CameraBackBurst>
+
+    <VideoStartBoost level="0" enable="1">
+        <scenario>
+            <video_start>enable</video_start>
+        </scenario>
+        <action>
+            <cpu>
+                <unit id="0">
+                    <minfreq>100%</minfreq>
+                    <maxfreq>100%</maxfreq>
+                </unit>
+            </cpu>
+            <ddr>
+                <minfreq>100%</minfreq>
+                <maxfreq>100%</maxfreq>
+            </ddr>
+			<vpu>
+                <unit id="0">
+                    <minfreq>416000</minfreq>
+                    <maxfreq>100%</maxfreq>
+                </unit>
+            </vpu>
+        </action>
+    </VideoStartBoost>
+
+    <InputEventDefault level="0" enable="0">
+        <scenario>
+            <input>
+                <press_status>pressed</press_status>
+            </input>
+        </scenario>
+        <action>
+            <cpu>
+                <unit id="0">
+                    <minfreq>624000</minfreq>
+                    <maxfreq>100%</maxfreq>
+                    <governor>interactive</governor>
+                </unit>
+            </cpu>
+            <gpu>
+                <unit id="0">
+                    <minfreq>416000</minfreq>
+                    <maxfreq>100%</maxfreq>
+                    <governor>ondemand</governor>
+                </unit>
+                <unit id="1">
+                    <minfreq>416000</minfreq>
+                    <maxfreq>100%</maxfreq>
+                    <governor>ondemand</governor>
+                </unit>
+            </gpu>
+            <ddr>
+                <minfreq>312000</minfreq>
+                <maxfreq>100%</maxfreq>
+            </ddr>
+        </action>
+    </InputEventDefault>
+
+    <InputEventMotion level="0" enable="0">
+        <scenario>
+            <input>
+                <press_status>pressed</press_status>
+                <motion>moving</motion>
+            </input>
+        </scenario>
+        <action>
+            <cpu>
+                <unit id="0">
+                    <minfreq>100%</minfreq>
+                    <maxfreq>100%</maxfreq>
+                    <governor>interactive</governor>
+                </unit>
+            </cpu>
+            <gpu>
+                <unit id="0">
+                    <minfreq>100%</minfreq>
+                    <maxfreq>100%</maxfreq>
+                    <governor>ondemand</governor>
+                </unit>
+                <unit id="1">
+                    <minfreq>100%</minfreq>
+                    <maxfreq>100%</maxfreq>
+                    <governor>ondemand</governor>
+                </unit>
+            </gpu>
+            <ddr>
+                <minfreq>100%</minfreq>
+                <maxfreq>100%</maxfreq>
+            </ddr>
+        </action>
+    </InputEventMotion>
+
+    <VideoPlayMidWithFPS level="0" enable="0">
+        <scenario>
+            <media>
+                <state>on</state>
+                <type>decode</type>
+                <resolution>720p</resolution>
+                <fps>55</fps>
+            </media>
+        </scenario>
+        <action>
+            <vpu>
+                <unit id="0">
+                    <setspeed>312000</setspeed>
+                </unit>
+            </vpu>
+        </action>
+    </VideoPlayMidWithFPS>
+
+    <VideoPlayHighWithFPS level="0" enable="0">
+        <scenario>
+            <media>
+                <state>on</state>
+                <type>decode</type>
+                <resolution>1080p</resolution>
+                <fps>55</fps>
+            </media>
+        </scenario>
+        <action>
+            <vpu>
+                <unit id="0">
+                    <setspeed>416000</setspeed>
+                </unit>
+            </vpu>
+        </action>
+    </VideoPlayHighWithFPS>
+
+</PowerHintService>
+

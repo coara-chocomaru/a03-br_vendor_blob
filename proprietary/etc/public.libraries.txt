@@ -1,0 +1,5 @@
+libMcClient.so
+libMcRegistry.so
+libOpenCL.so
+libsbox.so
+libts.so
