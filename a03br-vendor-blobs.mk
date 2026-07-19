@@ -42,7 +42,6 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/etc/common_scene_tuning.data:system/etc/common_scene_tuning.data \
     vendor/sts/a03br/proprietary/etc/db_config.xml:system/etc/db_config.xml \
     vendor/sts/a03br/proprietary/etc/default_volume_tables.xml:system/etc/default_volume_tables.xml \
-    vendor/sts/a03br/proprietary/etc/drmconfig:system/etc/drmconfig \
     vendor/sts/a03br/proprietary/etc/external_camera_config.xml:system/etc/external_camera_config.xml \
     vendor/sts/a03br/proprietary/etc/firmware/mrvl/8887AG1_wifi_cal_data.conf:system/etc/firmware/mrvl/8887AG1_wifi_cal_data.conf \
     vendor/sts/a03br/proprietary/etc/firmware/mrvl/8887_wifi_cal_data.conf:system/etc/firmware/mrvl/8887_wifi_cal_data.conf \
@@ -69,12 +68,12 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/etc/front_camera_scene.cfg:system/etc/front_camera_scene.cfg \
     vendor/sts/a03br/proprietary/etc/fstb.cfg:system/etc/fstb.cfg \
     vendor/sts/a03br/proprietary/etc/gfx.cfg:system/etc/gfx.cfg \
-    vendor/sts/a03br/proprietary/etc/gnss_helan3.bin:system/etc/gnss_helan3.bin \
-    vendor/sts/a03br/proprietary/etc/gnss_ulc1.bin:system/etc/gnss_ulc1.bin \
-    vendor/sts/a03br/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/sts/a03br/proprietary/etc/largeheaplist.xml:system/etc/largeheaplist.xml \
-    vendor/sts/a03br/proprietary/etc/mrvl_agps_default.conf:system/etc/mrvl_agps_default.conf \
-    vendor/sts/a03br/proprietary/etc/mrvl_gps_platform.conf:system/etc/mrvl_gps_platform.conf \
+    vendor/sts/a03br/proprietary/etc/media_codecs.xml:system/etc/media_codecs.xml \
+    vendor/sts/a03br/proprietary/etc/media_codecs_mediatek_audio.xml:system/etc/media_codecs_mediatek_audio.xml \
+    vendor/sts/a03br/proprietary/etc/media_codecs_mediatek_video.xml:system/etc/media_codecs_mediatek_video.xml \
+    vendor/sts/a03br/proprietary/etc/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
+    vendor/sts/a03br/proprietary/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
     vendor/sts/a03br/proprietary/etc/mrvlfm-amon.cfg:system/etc/mrvlfm-amon.cfg \
     vendor/sts/a03br/proprietary/etc/mrvlfm-horus.cfg:system/etc/mrvlfm-horus.cfg \
     vendor/sts/a03br/proprietary/etc/mtk_omx_core.cfg:system/etc/mtk_omx_core.cfg \
@@ -89,9 +88,6 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/etc/powerscntbl.cfg:system/etc/powerscntbl.cfg \
     vendor/sts/a03br/proprietary/etc/pxa_testcfg.ini:system/etc/pxa_testcfg.ini \
     vendor/sts/a03br/proprietary/etc/rom.bin:system/etc/rom.bin \
-    vendor/sts/a03br/proprietary/etc/seccomp_policy/configstore@1.1.policy:system/etc/seccomp_policy/configstore@1.1.policy \
-    vendor/sts/a03br/proprietary/etc/seccomp_policy/mediacodec.policy:system/etc/seccomp_policy/mediacodec.policy \
-    vendor/sts/a03br/proprietary/etc/seccomp_policy/mediaextractor.policy:system/etc/seccomp_policy/mediaextractor.policy \
     vendor/sts/a03br/proprietary/etc/throttle.sh:system/etc/throttle.sh \
     vendor/sts/a03br/proprietary/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/sts/a03br/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
@@ -101,8 +97,6 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/lib/egl/libGLESv2_MRVL.so:system/lib/egl/libGLESv2_MRVL.so \
     vendor/sts/a03br/proprietary/lib/hw/audio.primary.mrvl.so:system/lib/hw/audio.primary.mrvl.so \
     vendor/sts/a03br/proprietary/lib/hw/camera.mrvl.so:system/lib/hw/camera.mrvl.so \
-    vendor/sts/a03br/proprietary/lib/hw/gps.mrvl.so:system/lib/hw/gps.mrvl.so \
-    vendor/sts/a03br/proprietary/lib/hw/keystore.mrvl.so:system/lib/hw/keystore.mrvl.so \
     vendor/sts/a03br/proprietary/lib/hw/lights.mrvl.so:system/lib/hw/lights.mrvl.so \
     vendor/sts/a03br/proprietary/lib/hw/memtrack.mrvl.so:system/lib/hw/memtrack.mrvl.so \
     vendor/sts/a03br/proprietary/lib/hw/power.mrvl.so:system/lib/hw/power.mrvl.so \
@@ -184,7 +178,6 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/lib/libstagefright_mrvl_extractor.so:system/lib/libstagefright_mrvl_extractor.so \
     vendor/sts/a03br/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
     vendor/sts/a03br/proprietary/lib/libsysfs_access.so:system/lib/libsysfs_access.so \
-    vendor/sts/a03br/proprietary/lib/libtee_client.so:system/lib/libtee_client.so \
     vendor/sts/a03br/proprietary/lib/libtinyalsa.so:system/lib/libtinyalsa.so \
     vendor/sts/a03br/proprietary/lib/libwpa_client.so:system/lib/libwpa_client.so \
     vendor/sts/a03br/proprietary/lib/libwtpsp_ss.so:system/lib/libwtpsp_ss.so \
@@ -213,10 +206,8 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/lib64/egl/libEGL_MRVL.so:system/lib64/egl/libEGL_MRVL.so \
     vendor/sts/a03br/proprietary/lib64/egl/libGLESv1_CM_MRVL.so:system/lib64/egl/libGLESv1_CM_MRVL.so \
     vendor/sts/a03br/proprietary/lib64/egl/libGLESv2_MRVL.so:system/lib64/egl/libGLESv2_MRVL.so \
-    vendor/sts/a03br/proprietary/lib64/hw/gps.mrvl.so:system/lib64/hw/gps.mrvl.so \
     vendor/sts/a03br/proprietary/lib64/hw/gralloc.mrvl.so:system/lib64/hw/gralloc.mrvl.so \
     vendor/sts/a03br/proprietary/lib64/hw/hwcomposer.mrvl.so:system/lib64/hw/hwcomposer.mrvl.so \
-    vendor/sts/a03br/proprietary/lib64/hw/keystore.mrvl.so:system/lib64/hw/keystore.mrvl.so \
     vendor/sts/a03br/proprietary/lib64/hw/lights.mrvl.so:system/lib64/hw/lights.mrvl.so \
     vendor/sts/a03br/proprietary/lib64/hw/memtrack.mrvl.so:system/lib64/hw/memtrack.mrvl.so \
     vendor/sts/a03br/proprietary/lib64/hw/power.mrvl.so:system/lib64/hw/power.mrvl.so \
@@ -257,15 +248,14 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/lib64/libsensor_hal_mrvl.so:system/lib64/libsensor_hal_mrvl.so \
     vendor/sts/a03br/proprietary/lib64/libspeexresampler.so:system/lib64/libspeexresampler.so \
     vendor/sts/a03br/proprietary/lib64/libsysfs_access.so:system/lib64/libsysfs_access.so \
-    vendor/sts/a03br/proprietary/lib64/libtee_client.so:system/lib64/libtee_client.so \
     vendor/sts/a03br/proprietary/lib64/libtinyalsa.so:system/lib64/libtinyalsa.so \
     vendor/sts/a03br/proprietary/lib64/libvcm.so:system/lib64/libvcm.so \
     vendor/sts/a03br/proprietary/lib64/libwpa_client.so:system/lib64/libwpa_client.so \
     vendor/sts/a03br/proprietary/lib64/libwtpsp_ss.so:system/lib64/libwtpsp_ss.so \
-    vendor/sts/a03br/proprietary/vendor/Khronos/OpenCL/vendors/GPU_Vivante.icd:system/vendor/Khronos/OpenCL/vendors/GPU_Vivante.icd \
-    vendor/sts/a03br/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
-    vendor/sts/a03br/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so
-
+    vendor/sts/a03br/proprietary/etc/seccomp_policy/configstore@1.1.policy:system/etc/seccomp_policy/configstore@1.1.policy \
+    vendor/sts/a03br/proprietary/etc/seccomp_policy/mediacodec.policy:system/etc/seccomp_policy/mediacodec.policy \
+    vendor/sts/a03br/proprietary/etc/seccomp_policy/mediaextractor.policy:system/etc/seccomp_policy/mediaextractor.policy \
+    vendor/sts/a03br/proprietary/vendor/Khronos/OpenCL/vendors/GPU_Vivante.icd:system/vendor/Khronos/OpenCL/vendors/GPU_Vivante.icd 
 
 #     vendor/sts/a03br/proprietary/bin/applypatch:system/bin/applypatch \
 #     vendor/sts/a03br/proprietary/bin/atcmdsrv:system/bin/atcmdsrv \
@@ -336,3 +326,20 @@ PRODUCT_COPY_FILES += \
 #     vendor/sts/a03br/proprietary/lib64/libreference-ril.so:system/lib64/libreference-ril.so \
 #     vendor/sts/a03br/proprietary/lib64/libril.so:system/lib64/libril.so \
 #     vendor/sts/a03br/proprietary/lib64/librilutils.so:system/lib64/librilutils.so
+#     vendor/sts/a03br/proprietary/etc/gnss_helan3.bin:system/etc/gnss_helan3.bin \
+#     vendor/sts/a03br/proprietary/etc/gnss_ulc1.bin:system/etc/gnss_ulc1.bin \
+#     vendor/sts/a03br/proprietary/etc/gps.conf:system/etc/gps.conf \
+#     vendor/sts/a03br/proprietary/etc/mrvl_agps_default.conf:system/etc/mrvl_agps_default.conf \
+#     vendor/sts/a03br/proprietary/etc/mrvl_gps_platform.conf:system/etc/mrvl_gps_platform.conf \
+#     vendor/sts/a03br/proprietary/lib/hw/gps.mrvl.so:system/lib/hw/gps.mrvl.so \
+#     vendor/sts/a03br/proprietary/lib64/hw/gps.mrvl.so:system/lib64/hw/gps.mrvl.so \
+#     vendor/sts/a03br/proprietary/etc/drmconfig:system/etc/drmconfig \
+#     vendor/sts/a03br/proprietary/etc/seccomp_policy/configstore@1.1.policy:system/etc/seccomp_policy/configstore@1.1.policy \
+#     vendor/sts/a03br/proprietary/etc/seccomp_policy/mediacodec.policy:system/etc/seccomp_policy/mediacodec.policy \
+#     vendor/sts/a03br/proprietary/etc/seccomp_policy/mediaextractor.policy:system/etc/seccomp_policy/mediaextractor.policy \
+#     vendor/sts/a03br/proprietary/lib/hw/keystore.mrvl.so:system/lib/hw/keystore.mrvl.so \
+#     vendor/sts/a03br/proprietary/lib/libtee_client.so:system/lib/libtee_client.so \
+#     vendor/sts/a03br/proprietary/lib64/hw/keystore.mrvl.so:system/lib64/hw/keystore.mrvl.so \
+#     vendor/sts/a03br/proprietary/lib64/libtee_client.so:system/lib64/libtee_client.so \
+#     vendor/sts/a03br/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
+#     vendor/sts/a03br/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so
