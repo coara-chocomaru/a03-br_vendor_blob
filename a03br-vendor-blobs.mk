@@ -18,7 +18,6 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/bin/mlanconfig:system/bin/mlanconfig \
     vendor/sts/a03br/proprietary/bin/mlanutl:system/bin/mlanutl \
     vendor/sts/a03br/proprietary/bin/setprod:system/bin/setprod \
-    vendor/sts/a03br/proprietary/bin/teec_sstd_ca:system/bin/teec_sstd_ca \
     vendor/sts/a03br/proprietary/bin/ts_calibrator:system/bin/ts_calibrator \
     vendor/sts/a03br/proprietary/etc/a2dp_audio_policy_configuration.xml:system/etc/a2dp_audio_policy_configuration.xml \
     vendor/sts/a03br/proprietary/etc/audio_acoustic_device.xml:system/etc/audio_acoustic_device.xml \
