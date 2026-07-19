@@ -6,72 +6,32 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/bin/appHantroDec:system/bin/appHantroDec \
     vendor/sts/a03br/proprietary/bin/appHantroEnc:system/bin/appHantroEnc \
     vendor/sts/a03br/proprietary/bin/appHantroPP:system/bin/appHantroPP \
-    vendor/sts/a03br/proprietary/bin/applypatch:system/bin/applypatch \
-    vendor/sts/a03br/proprietary/bin/atcmdsrv:system/bin/atcmdsrv \
-    vendor/sts/a03br/proprietary/bin/bootanimation:system/bin/bootanimation \
-    vendor/sts/a03br/proprietary/bin/clatd:system/bin/clatd \
     vendor/sts/a03br/proprietary/bin/codecIPC_server:system/bin/codecIPC_server \
-    vendor/sts/a03br/proprietary/bin/cploader:system/bin/cploader \
-    vendor/sts/a03br/proprietary/bin/dhcpcd:system/bin/dhcpcd \
-    vendor/sts/a03br/proprietary/bin/diag:system/bin/diag \
-    vendor/sts/a03br/proprietary/bin/diagcmd:system/bin/diagcmd \
     vendor/sts/a03br/proprietary/bin/eeh:system/bin/eeh \
     vendor/sts/a03br/proprietary/bin/getprod:system/bin/getprod \
-    vendor/sts/a03br/proprietary/bin/hostapd:system/bin/hostapd \
     vendor/sts/a03br/proprietary/bin/hwacc:system/bin/hwacc \
     vendor/sts/a03br/proprietary/bin/i2cdetect:system/bin/i2cdetect \
     vendor/sts/a03br/proprietary/bin/i2cdump:system/bin/i2cdump \
     vendor/sts/a03br/proprietary/bin/i2cget:system/bin/i2cget \
     vendor/sts/a03br/proprietary/bin/i2cset:system/bin/i2cset \
-    vendor/sts/a03br/proprietary/bin/ip:system/bin/ip \
-    vendor/sts/a03br/proprietary/bin/ip6tables:system/bin/ip6tables \
-    vendor/sts/a03br/proprietary/bin/iptables:system/bin/iptables \
-    vendor/sts/a03br/proprietary/bin/logwrapper:system/bin/logwrapper \
     vendor/sts/a03br/proprietary/bin/mlan2040coex:system/bin/mlan2040coex \
     vendor/sts/a03br/proprietary/bin/mlanconfig:system/bin/mlanconfig \
     vendor/sts/a03br/proprietary/bin/mlanutl:system/bin/mlanutl \
-    vendor/sts/a03br/proprietary/bin/mrdloader:system/bin/mrdloader \
-    vendor/sts/a03br/proprietary/bin/msocket_testport:system/bin/msocket_testport \
-    vendor/sts/a03br/proprietary/bin/mtpd:system/bin/mtpd \
-    vendor/sts/a03br/proprietary/bin/ndc:system/bin/ndc \
-    vendor/sts/a03br/proprietary/bin/netcfg:system/bin/netcfg \
-    vendor/sts/a03br/proprietary/bin/nvm:system/bin/nvm \
-    vendor/sts/a03br/proprietary/bin/nvmcp:system/bin/nvmcp \
-    vendor/sts/a03br/proprietary/bin/phs_cmd:system/bin/phs_cmd \
-    vendor/sts/a03br/proprietary/bin/phservice:system/bin/phservice \
-    vendor/sts/a03br/proprietary/bin/ping:system/bin/ping \
-    vendor/sts/a03br/proprietary/bin/ping6:system/bin/ping6 \
-    vendor/sts/a03br/proprietary/bin/pppd:system/bin/pppd \
-    vendor/sts/a03br/proprietary/bin/pppmodem:system/bin/pppmodem \
-    vendor/sts/a03br/proprietary/bin/racoon:system/bin/racoon \
-    vendor/sts/a03br/proprietary/bin/radvd:system/bin/radvd \
-    vendor/sts/a03br/proprietary/bin/screencap:system/bin/screencap \
-    vendor/sts/a03br/proprietary/bin/screenrecord:system/bin/screenrecord \
-    vendor/sts/a03br/proprietary/bin/sensorservice:system/bin/sensorservice \
-    vendor/sts/a03br/proprietary/bin/serial_cfun0:system/bin/serial_cfun0 \
-    vendor/sts/a03br/proprietary/bin/serial_client:system/bin/serial_client \
     vendor/sts/a03br/proprietary/bin/setprod:system/bin/setprod \
-    vendor/sts/a03br/proprietary/bin/tc:system/bin/tc \
     vendor/sts/a03br/proprietary/bin/teec_sstd_ca:system/bin/teec_sstd_ca \
     vendor/sts/a03br/proprietary/bin/ts_calibrator:system/bin/ts_calibrator \
-    vendor/sts/a03br/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
     vendor/sts/a03br/proprietary/etc/a2dp_audio_policy_configuration.xml:system/etc/a2dp_audio_policy_configuration.xml \
     vendor/sts/a03br/proprietary/etc/audio_acoustic_device.xml:system/etc/audio_acoustic_device.xml \
     vendor/sts/a03br/proprietary/etc/audio_basic_element_apu.xml:system/etc/audio_basic_element_apu.xml \
     vendor/sts/a03br/proprietary/etc/audio_basic_element_codec.xml:system/etc/audio_basic_element_codec.xml \
     vendor/sts/a03br/proprietary/etc/audio_device.xml:system/etc/audio_device.xml \
     vendor/sts/a03br/proprietary/etc/audio_effect_config.xml:system/etc/audio_effect_config.xml \
-    vendor/sts/a03br/proprietary/etc/audio_effects.conf:system/etc/audio_effects.conf \
-    vendor/sts/a03br/proprietary/etc/audio_effects.xml:system/etc/audio_effects.xml \
     vendor/sts/a03br/proprietary/etc/audio_em.xml:system/etc/audio_em.xml \
     vendor/sts/a03br/proprietary/etc/audio_gain_config.xml:system/etc/audio_gain_config.xml \
     vendor/sts/a03br/proprietary/etc/audio_gain_config_right.xml:system/etc/audio_gain_config_right.xml \
     vendor/sts/a03br/proprietary/etc/audio_path_config_apu.xml:system/etc/audio_path_config_apu.xml \
     vendor/sts/a03br/proprietary/etc/audio_path_config_codec.xml:system/etc/audio_path_config_codec.xml \
     vendor/sts/a03br/proprietary/etc/audio_path_config_codec_right.xml:system/etc/audio_path_config_codec_right.xml \
-    vendor/sts/a03br/proprietary/etc/audio_policy.conf:system/etc/audio_policy.conf \
-    vendor/sts/a03br/proprietary/etc/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
-    vendor/sts/a03br/proprietary/etc/audio_policy_volumes.xml:system/etc/audio_policy_volumes.xml \
     vendor/sts/a03br/proprietary/etc/audio_virtualpath_config.xml:system/etc/audio_virtualpath_config.xml \
     vendor/sts/a03br/proprietary/etc/audio_virtualpath_config_right.xml:system/etc/audio_virtualpath_config_right.xml \
     vendor/sts/a03br/proprietary/etc/back_camera_scene.cfg:system/etc/back_camera_scene.cfg \
@@ -83,9 +43,7 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/etc/db_config.xml:system/etc/db_config.xml \
     vendor/sts/a03br/proprietary/etc/default_volume_tables.xml:system/etc/default_volume_tables.xml \
     vendor/sts/a03br/proprietary/etc/drmconfig:system/etc/drmconfig \
-    vendor/sts/a03br/proprietary/etc/event-log-tags:system/etc/event-log-tags \
     vendor/sts/a03br/proprietary/etc/external_camera_config.xml:system/etc/external_camera_config.xml \
-    vendor/sts/a03br/proprietary/etc/fallback_fonts.xml:system/etc/fallback_fonts.xml \
     vendor/sts/a03br/proprietary/etc/firmware/mrvl/8887AG1_wifi_cal_data.conf:system/etc/firmware/mrvl/8887AG1_wifi_cal_data.conf \
     vendor/sts/a03br/proprietary/etc/firmware/mrvl/8887_wifi_cal_data.conf:system/etc/firmware/mrvl/8887_wifi_cal_data.conf \
     vendor/sts/a03br/proprietary/etc/firmware/mrvl/WlanCalData_ext_AG2.conf:system/etc/firmware/mrvl/WlanCalData_ext_AG2.conf \
@@ -107,36 +65,20 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/etc/firmware/mrvl/w8887o.bin:system/etc/firmware/mrvl/w8887o.bin \
     vendor/sts/a03br/proprietary/etc/firmware/mrvl/w8887o_SDIO_A0.bin:system/etc/firmware/mrvl/w8887o_SDIO_A0.bin \
     vendor/sts/a03br/proprietary/etc/fmhal.cfg:system/etc/fmhal.cfg \
-    vendor/sts/a03br/proprietary/etc/fonts.xml:system/etc/fonts.xml \
     vendor/sts/a03br/proprietary/etc/foreground_task.xml:system/etc/foreground_task.xml \
     vendor/sts/a03br/proprietary/etc/front_camera_scene.cfg:system/etc/front_camera_scene.cfg \
-    vendor/sts/a03br/proprietary/etc/fs_config_dirs:system/etc/fs_config_dirs \
-    vendor/sts/a03br/proprietary/etc/fs_config_files:system/etc/fs_config_files \
     vendor/sts/a03br/proprietary/etc/fstb.cfg:system/etc/fstb.cfg \
     vendor/sts/a03br/proprietary/etc/gfx.cfg:system/etc/gfx.cfg \
     vendor/sts/a03br/proprietary/etc/gnss_helan3.bin:system/etc/gnss_helan3.bin \
     vendor/sts/a03br/proprietary/etc/gnss_ulc1.bin:system/etc/gnss_ulc1.bin \
     vendor/sts/a03br/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/sts/a03br/proprietary/etc/largeheaplist.xml:system/etc/largeheaplist.xml \
-    vendor/sts/a03br/proprietary/etc/media_codecs.xml:system/etc/media_codecs.xml \
-    vendor/sts/a03br/proprietary/etc/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
-    vendor/sts/a03br/proprietary/etc/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
-    vendor/sts/a03br/proprietary/etc/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
-    vendor/sts/a03br/proprietary/etc/media_codecs_google_video_le.xml:system/etc/media_codecs_google_video_le.xml \
-    vendor/sts/a03br/proprietary/etc/media_codecs_mediatek_audio.xml:system/etc/media_codecs_mediatek_audio.xml \
-    vendor/sts/a03br/proprietary/etc/media_codecs_mediatek_video.xml:system/etc/media_codecs_mediatek_video.xml \
-    vendor/sts/a03br/proprietary/etc/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
-    vendor/sts/a03br/proprietary/etc/media_profiles.xml:system/etc/media_profiles.xml \
-    vendor/sts/a03br/proprietary/etc/media_profiles_V1_0.xml:system/etc/media_profiles_V1_0.xml \
-    vendor/sts/a03br/proprietary/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
-    vendor/sts/a03br/proprietary/etc/mkshrc:system/etc/mkshrc \
     vendor/sts/a03br/proprietary/etc/mrvl_agps_default.conf:system/etc/mrvl_agps_default.conf \
     vendor/sts/a03br/proprietary/etc/mrvl_gps_platform.conf:system/etc/mrvl_gps_platform.conf \
     vendor/sts/a03br/proprietary/etc/mrvlfm-amon.cfg:system/etc/mrvlfm-amon.cfg \
     vendor/sts/a03br/proprietary/etc/mrvlfm-horus.cfg:system/etc/mrvlfm-horus.cfg \
     vendor/sts/a03br/proprietary/etc/mtk_omx_core.cfg:system/etc/mtk_omx_core.cfg \
     vendor/sts/a03br/proprietary/etc/partition_permission.sh:system/etc/partition_permission.sh \
-    vendor/sts/a03br/proprietary/etc/passwd:system/etc/passwd \
     vendor/sts/a03br/proprietary/etc/pipeline_config.xml:system/etc/pipeline_config.xml \
     vendor/sts/a03br/proprietary/etc/platform_audio_config.xml:system/etc/platform_audio_config.xml \
     vendor/sts/a03br/proprietary/etc/power_app_cfg.xml:system/etc/power_app_cfg.xml \
@@ -145,17 +87,12 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/etc/powerpolicy.pxa1928.xml:system/etc/powerpolicy.pxa1928.xml \
     vendor/sts/a03br/proprietary/etc/powerpolicy.xml:system/etc/powerpolicy.xml \
     vendor/sts/a03br/proprietary/etc/powerscntbl.cfg:system/etc/powerscntbl.cfg \
-    vendor/sts/a03br/proprietary/etc/public.libraries.txt:system/etc/public.libraries.txt \
     vendor/sts/a03br/proprietary/etc/pxa_testcfg.ini:system/etc/pxa_testcfg.ini \
-    vendor/sts/a03br/proprietary/etc/r_submix_audio_policy_configuration.xml:system/etc/r_submix_audio_policy_configuration.xml \
     vendor/sts/a03br/proprietary/etc/rom.bin:system/etc/rom.bin \
     vendor/sts/a03br/proprietary/etc/seccomp_policy/configstore@1.1.policy:system/etc/seccomp_policy/configstore@1.1.policy \
     vendor/sts/a03br/proprietary/etc/seccomp_policy/mediacodec.policy:system/etc/seccomp_policy/mediacodec.policy \
     vendor/sts/a03br/proprietary/etc/seccomp_policy/mediaextractor.policy:system/etc/seccomp_policy/mediaextractor.policy \
-    vendor/sts/a03br/proprietary/etc/smsdbvisitor.xml:system/etc/smsdbvisitor.xml \
-    vendor/sts/a03br/proprietary/etc/system_fonts.xml:system/etc/system_fonts.xml \
     vendor/sts/a03br/proprietary/etc/throttle.sh:system/etc/throttle.sh \
-    vendor/sts/a03br/proprietary/etc/usb_audio_policy_configuration.xml:system/etc/usb_audio_policy_configuration.xml \
     vendor/sts/a03br/proprietary/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/sts/a03br/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     vendor/sts/a03br/proprietary/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
@@ -234,8 +171,6 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/lib/libmiscgen.so:system/lib/libmiscgen.so \
     vendor/sts/a03br/proprietary/lib/libmpg123_mrvl.so:system/lib/libmpg123_mrvl.so \
     vendor/sts/a03br/proprietary/lib/libmsgqueue.so:system/lib/libmsgqueue.so \
-    vendor/sts/a03br/proprietary/lib/libmtel.so:system/lib/libmtel.so \
-    vendor/sts/a03br/proprietary/lib/libmtelif.so:system/lib/libmtelif.so \
     vendor/sts/a03br/proprietary/lib/libnetd_client.so:system/lib/libnetd_client.so \
     vendor/sts/a03br/proprietary/lib/libnetutils.so:system/lib/libnetutils.so \
     vendor/sts/a03br/proprietary/lib/libnl.so:system/lib/libnl.so \
@@ -243,9 +178,6 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/lib/libphs_log.so:system/lib/libphs_log.so \
     vendor/sts/a03br/proprietary/lib/libpixelflinger.so:system/lib/libpixelflinger.so \
     vendor/sts/a03br/proprietary/lib/libpowerhintservice.so:system/lib/libpowerhintservice.so \
-    vendor/sts/a03br/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
-    vendor/sts/a03br/proprietary/lib/libril.so:system/lib/libril.so \
-    vendor/sts/a03br/proprietary/lib/librilutils.so:system/lib/librilutils.so \
     vendor/sts/a03br/proprietary/lib/libscenedetect.so:system/lib/libscenedetect.so \
     vendor/sts/a03br/proprietary/lib/libsensor_hal_mrvl.so:system/lib/libsensor_hal_mrvl.so \
     vendor/sts/a03br/proprietary/lib/libspeexresampler.so:system/lib/libspeexresampler.so \
@@ -264,7 +196,6 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/lib64/PowerHint/hint_fm.so:system/lib64/PowerHint/hint_fm.so \
     vendor/sts/a03br/proprietary/lib64/PowerHint/hint_foreground_task.so:system/lib64/PowerHint/hint_foreground_task.so \
     vendor/sts/a03br/proprietary/lib64/PowerHint/hint_media.so:system/lib64/PowerHint/hint_media.so \
-    vendor/sts/a03br/proprietary/lib64/PowerHint/hint_phone.so:system/lib64/PowerHint/hint_phone.so \
     vendor/sts/a03br/proprietary/lib64/PowerHint/hint_rotation.so:system/lib64/PowerHint/hint_rotation.so \
     vendor/sts/a03br/proprietary/lib64/PowerHint/hint_screen.so:system/lib64/PowerHint/hint_screen.so \
     vendor/sts/a03br/proprietary/lib64/PowerHint/hint_ssg_booster.so:system/lib64/PowerHint/hint_ssg_booster.so \
@@ -317,17 +248,12 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/lib64/libmlfifo.so:system/lib64/libmlfifo.so \
     vendor/sts/a03br/proprietary/lib64/libmrdflag.so:system/lib64/libmrdflag.so \
     vendor/sts/a03br/proprietary/lib64/libmsgqueue.so:system/lib64/libmsgqueue.so \
-    vendor/sts/a03br/proprietary/lib64/libmtel.so:system/lib64/libmtel.so \
-    vendor/sts/a03br/proprietary/lib64/libmtelif.so:system/lib64/libmtelif.so \
     vendor/sts/a03br/proprietary/lib64/libnetd_client.so:system/lib64/libnetd_client.so \
     vendor/sts/a03br/proprietary/lib64/libnetutils.so:system/lib64/libnetutils.so \
     vendor/sts/a03br/proprietary/lib64/libnl.so:system/lib64/libnl.so \
     vendor/sts/a03br/proprietary/lib64/libphs_log.so:system/lib64/libphs_log.so \
     vendor/sts/a03br/proprietary/lib64/libpixelflinger.so:system/lib64/libpixelflinger.so \
     vendor/sts/a03br/proprietary/lib64/libpowerhintservice.so:system/lib64/libpowerhintservice.so \
-    vendor/sts/a03br/proprietary/lib64/libreference-ril.so:system/lib64/libreference-ril.so \
-    vendor/sts/a03br/proprietary/lib64/libril.so:system/lib64/libril.so \
-    vendor/sts/a03br/proprietary/lib64/librilutils.so:system/lib64/librilutils.so \
     vendor/sts/a03br/proprietary/lib64/libsensor_hal_mrvl.so:system/lib64/libsensor_hal_mrvl.so \
     vendor/sts/a03br/proprietary/lib64/libspeexresampler.so:system/lib64/libspeexresampler.so \
     vendor/sts/a03br/proprietary/lib64/libsysfs_access.so:system/lib64/libsysfs_access.so \
@@ -339,3 +265,74 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/vendor/Khronos/OpenCL/vendors/GPU_Vivante.icd:system/vendor/Khronos/OpenCL/vendors/GPU_Vivante.icd \
     vendor/sts/a03br/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/sts/a03br/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so
+
+
+#     vendor/sts/a03br/proprietary/bin/applypatch:system/bin/applypatch \
+#     vendor/sts/a03br/proprietary/bin/atcmdsrv:system/bin/atcmdsrv \
+#     vendor/sts/a03br/proprietary/bin/bootanimation:system/bin/bootanimation \
+#     vendor/sts/a03br/proprietary/bin/clatd:system/bin/clatd \
+#     vendor/sts/a03br/proprietary/bin/cploader:system/bin/cploader \
+#     vendor/sts/a03br/proprietary/bin/dhcpcd:system/bin/dhcpcd \
+#     vendor/sts/a03br/proprietary/bin/diag:system/bin/diag \
+#     vendor/sts/a03br/proprietary/bin/diagcmd:system/bin/diagcmd \
+#     vendor/sts/a03br/proprietary/bin/hostapd:system/bin/hostapd \
+#     vendor/sts/a03br/proprietary/bin/ip:system/bin/ip \
+#     vendor/sts/a03br/proprietary/bin/ip6tables:system/bin/ip6tables \
+#     vendor/sts/a03br/proprietary/bin/iptables:system/bin/iptables \
+#     vendor/sts/a03br/proprietary/bin/logwrapper:system/bin/logwrapper \
+#     vendor/sts/a03br/proprietary/bin/mrdloader:system/bin/mrdloader \
+#     vendor/sts/a03br/proprietary/bin/msocket_testport:system/bin/msocket_testport \
+#     vendor/sts/a03br/proprietary/bin/mtpd:system/bin/mtpd \
+#     vendor/sts/a03br/proprietary/bin/ndc:system/bin/ndc \
+#     vendor/sts/a03br/proprietary/bin/netcfg:system/bin/netcfg \
+#     vendor/sts/a03br/proprietary/bin/nvm:system/bin/nvm \
+#     vendor/sts/a03br/proprietary/bin/nvmcp:system/bin/nvmcp \
+#     vendor/sts/a03br/proprietary/bin/phs_cmd:system/bin/phs_cmd \
+#     vendor/sts/a03br/proprietary/bin/phservice:system/bin/phservice \
+#     vendor/sts/a03br/proprietary/bin/ping:system/bin/ping \
+#     vendor/sts/a03br/proprietary/bin/ping6:system/bin/ping6 \
+#     vendor/sts/a03br/proprietary/bin/pppd:system/bin/pppd \
+#     vendor/sts/a03br/proprietary/bin/pppmodem:system/bin/pppmodem \
+#     vendor/sts/a03br/proprietary/bin/racoon:system/bin/racoon \
+#     vendor/sts/a03br/proprietary/bin/radvd:system/bin/radvd \
+#     vendor/sts/a03br/proprietary/bin/screencap:system/bin/screencap \
+#     vendor/sts/a03br/proprietary/bin/screenrecord:system/bin/screenrecord \
+#     vendor/sts/a03br/proprietary/bin/sensorservice:system/bin/sensorservice \
+#     vendor/sts/a03br/proprietary/bin/serial_cfun0:system/bin/serial_cfun0 \
+#     vendor/sts/a03br/proprietary/bin/serial_client:system/bin/serial_client \
+#     vendor/sts/a03br/proprietary/bin/tc:system/bin/tc \
+#     vendor/sts/a03br/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
+#     vendor/sts/a03br/proprietary/etc/audio_effects.conf:system/etc/audio_effects.conf \
+#     vendor/sts/a03br/proprietary/etc/audio_effects.xml:system/etc/audio_effects.xml \
+#     vendor/sts/a03br/proprietary/etc/audio_policy.conf:system/etc/audio_policy.conf \
+#     vendor/sts/a03br/proprietary/etc/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
+#     vendor/sts/a03br/proprietary/etc/audio_policy_volumes.xml:system/etc/audio_policy_volumes.xml \
+#     vendor/sts/a03br/proprietary/etc/event-log-tags:system/etc/event-log-tags \
+#     vendor/sts/a03br/proprietary/etc/fallback_fonts.xml:system/etc/fallback_fonts.xml \
+#     vendor/sts/a03br/proprietary/etc/fonts.xml:system/etc/fonts.xml \
+#     vendor/sts/a03br/proprietary/etc/fs_config_dirs:system/etc/fs_config_dirs \
+#     vendor/sts/a03br/proprietary/etc/fs_config_files:system/etc/fs_config_files \
+#     vendor/sts/a03br/proprietary/etc/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
+#     vendor/sts/a03br/proprietary/etc/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
+#     vendor/sts/a03br/proprietary/etc/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
+#     vendor/sts/a03br/proprietary/etc/media_codecs_google_video_le.xml:system/etc/media_codecs_google_video_le.xml \
+#     vendor/sts/a03br/proprietary/etc/media_profiles.xml:system/etc/media_profiles.xml \
+#     vendor/sts/a03br/proprietary/etc/media_profiles_V1_0.xml:system/etc/media_profiles_V1_0.xml \
+#     vendor/sts/a03br/proprietary/etc/mkshrc:system/etc/mkshrc \
+#     vendor/sts/a03br/proprietary/etc/passwd:system/etc/passwd \
+#     vendor/sts/a03br/proprietary/etc/public.libraries.txt:system/etc/public.libraries.txt \
+#     vendor/sts/a03br/proprietary/etc/r_submix_audio_policy_configuration.xml:system/etc/r_submix_audio_policy_configuration.xml \
+#     vendor/sts/a03br/proprietary/etc/smsdbvisitor.xml:system/etc/smsdbvisitor.xml \
+#     vendor/sts/a03br/proprietary/etc/system_fonts.xml:system/etc/system_fonts.xml \
+#     vendor/sts/a03br/proprietary/etc/usb_audio_policy_configuration.xml:system/etc/usb_audio_policy_configuration.xml \
+#     vendor/sts/a03br/proprietary/lib/libmtel.so:system/lib/libmtel.so \
+#     vendor/sts/a03br/proprietary/lib/libmtelif.so:system/lib/libmtelif.so \
+#     vendor/sts/a03br/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
+#     vendor/sts/a03br/proprietary/lib/libril.so:system/lib/libril.so \
+#     vendor/sts/a03br/proprietary/lib/librilutils.so:system/lib/librilutils.so \
+#     vendor/sts/a03br/proprietary/lib64/PowerHint/hint_phone.so:system/lib64/PowerHint/hint_phone.so \
+#     vendor/sts/a03br/proprietary/lib64/libmtel.so:system/lib64/libmtel.so \
+#     vendor/sts/a03br/proprietary/lib64/libmtelif.so:system/lib64/libmtelif.so \
+#     vendor/sts/a03br/proprietary/lib64/libreference-ril.so:system/lib64/libreference-ril.so \
+#     vendor/sts/a03br/proprietary/lib64/libril.so:system/lib64/libril.so \
+#     vendor/sts/a03br/proprietary/lib64/librilutils.so:system/lib64/librilutils.so
