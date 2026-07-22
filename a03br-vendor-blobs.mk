@@ -257,7 +257,12 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/lib64/libxml2.so:system/lib64/libxml2.so \
     vendor/sts/a03br/proprietary/lib/libxml2.so:system/lib/libxml2.so \
     vendor/sts/a03br/proprietary/lib64/libmvmem.so:system/lib64/libmvmem.so \
-    vendor/sts/a03br/proprietary/lib/libmvmem.so:system/lib/libmvmem.so
+    vendor/sts/a03br/proprietary/lib/libmvmem.so:system/lib/libmvmem.so \
+    vendor/sts/a03br/proprietary/lib64/egl/egl.cfg:system/lib64/egl/egl.cfg \
+    vendor/sts/a03br/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
+    vendor/sts/a03br/proprietary/lib64/egl/libGLES_android.so:system/lib64/egl/libGLES_android.so \
+    vendor/sts/a03br/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so
+
 
 #     vendor/sts/a03br/proprietary/bin/applypatch:system/bin/applypatch \
 #     vendor/sts/a03br/proprietary/bin/atcmdsrv:system/bin/atcmdsrv \
