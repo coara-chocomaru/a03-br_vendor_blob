@@ -253,7 +253,11 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/etc/seccomp_policy/configstore@1.1.policy:system/etc/seccomp_policy/configstore@1.1.policy \
     vendor/sts/a03br/proprietary/etc/seccomp_policy/mediacodec.policy:system/etc/seccomp_policy/mediacodec.policy \
     vendor/sts/a03br/proprietary/etc/seccomp_policy/mediaextractor.policy:system/etc/seccomp_policy/mediaextractor.policy \
-    vendor/sts/a03br/proprietary/vendor/Khronos/OpenCL/vendors/GPU_Vivante.icd:system/vendor/Khronos/OpenCL/vendors/GPU_Vivante.icd 
+    vendor/sts/a03br/proprietary/vendor/Khronos/OpenCL/vendors/GPU_Vivante.icd:system/vendor/Khronos/OpenCL/vendors/GPU_Vivante.icd \
+    vendor/sts/a03br/proprietary/lib64/libxml2.so:system/lib64/libxml2.so \
+    vendor/sts/a03br/proprietary/lib/libxml2.so:system/lib/libxml2.so \
+    vendor/sts/a03br/proprietary/lib64/libmvmem.so:system/lib64/libmvmem.so \
+    vendor/sts/a03br/proprietary/lib/libmvmem.so:system/lib/libmvmem.so
 
 #     vendor/sts/a03br/proprietary/bin/applypatch:system/bin/applypatch \
 #     vendor/sts/a03br/proprietary/bin/atcmdsrv:system/bin/atcmdsrv \
