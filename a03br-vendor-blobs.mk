@@ -261,7 +261,11 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/lib64/egl/egl.cfg:system/lib64/egl/egl.cfg \
     vendor/sts/a03br/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
     vendor/sts/a03br/proprietary/lib64/egl/libGLES_android.so:system/lib64/egl/libGLES_android.so \
-    vendor/sts/a03br/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so
+    vendor/sts/a03br/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
+    vendor/sts/a03br/proprietary/lib64/libcamera_client.so:system/lib64/libcamera_client.so \
+    vendor/sts/a03br/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so
+
+
 
 
 #     vendor/sts/a03br/proprietary/bin/applypatch:system/bin/applypatch \
