@@ -263,6 +263,23 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/lib64/egl/libGLES_android.so:system/lib64/egl/libGLES_android.so \
     vendor/sts/a03br/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
     vendor/sts/a03br/proprietary/lib64/libcamera_client.so:system/lib64/libcamera_client.so \
+    vendor/sts/a03br/proprietary/lib/hw/audio.a2dp.default.so:system/lib/hw/audio.a2dp.default.so \
+    vendor/sts/a03br/proprietary/lib/hw/audio.primary.default.so:system/lib/hw/audio.primary.default.so \
+    vendor/sts/a03br/proprietary/lib/hw/audio.r_submix.default.so:system/lib/hw/audio.r_submix.default.so \
+    vendor/sts/a03br/proprietary/lib/hw/audio.usb.default.so:system/lib/hw/audio.usb.default.so \
+    vendor/sts/a03br/proprietary/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \
+    vendor/sts/a03br/proprietary/lib/hw/bluetooth.default.so:system/lib/hw/bluetooth.default.so \
+    vendor/sts/a03br/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
+    vendor/sts/a03br/proprietary/lib/hw/gralloc.mrvl.so:system/lib/hw/gralloc.mrvl.so \
+    vendor/sts/a03br/proprietary/lib/hw/hwcomposer.mrvl.so:system/lib/hw/hwcomposer.mrvl.so \
+    vendor/sts/a03br/proprietary/lib/hw/power.default.so:system/lib/hw/power.default.so \
+    vendor/sts/a03br/proprietary/lib64/hw/audio.a2dp.default.so:system/lib64/hw/audio.a2dp.default.so \
+    vendor/sts/a03br/proprietary/lib64/hw/audio.primary.default.so:system/lib64/hw/audio.primary.default.so \
+    vendor/sts/a03br/proprietary/lib64/hw/audio.r_submix.default.so:system/lib64/hw/audio.r_submix.default.so \
+    vendor/sts/a03br/proprietary/lib64/hw/audio.usb.default.so:system/lib64/hw/audio.usb.default.so \
+    vendor/sts/a03br/proprietary/lib64/hw/audio_policy.default.so:system/lib64/hw/audio_policy.default.so \
+    vendor/sts/a03br/proprietary/lib64/hw/gralloc.default.so:system/lib64/hw/gralloc.default.so \
+    vendor/sts/a03br/proprietary/lib64/hw/power.default.so:system/lib64/hw/power.default.so \
     vendor/sts/a03br/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so
 
 
