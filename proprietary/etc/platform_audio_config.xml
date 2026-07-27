@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MarvellPlatformAudioConfiguration>
+    <BoardDeviceList>
+        <Device connectivity="diff" coupling="ac">AMIC2</Device>
+        <Device connectivity="single_ended" coupling="ac">HSMIC</Device>
+        <Device>DMIC1</Device>
+    </BoardDeviceList>
+    <AndroidDevice identifier="AUDIO_DEVICE_IN_BUILTIN_MIC">
+        <!-- voice call with AMIC2 when in builtin mic -->
+        <Application identifier="VoiceCall">
+            <Device>AMIC2</Device>
+        </Application>
+        <!-- VoIP with AMIC2 when in builtin mic -->
+        <Application identifier="VoIP">
+            <Device>AMIC2</Device>
+        </Application>
+        <!-- default with AMIC2 when in builtin mic -->
+        <Application identifier="Default">
+            <Device>AMIC2</Device>
+        </Application>
+    </AndroidDevice>
+    <AndroidDevice identifier="AUDIO_DEVICE_IN_BACK_MIC">
+        <!-- voice call with AMIC2 when in back mic -->
+        <Application identifier="VoiceCall">
+            <Device>AMIC2</Device>
+        </Application>
+        <!-- VoIP with AMIC2 when in back mic -->
+        <Application identifier="VoIP">
+            <Device>AMIC2</Device>
+        </Application>
+        <!-- default, with AMIC2 when in back mic -->
+        <Application identifier="Default">
+            <Device>AMIC2</Device>
+        </Application>
+    </AndroidDevice>
+</MarvellPlatformAudioConfiguration>

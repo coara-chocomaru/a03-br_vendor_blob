@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+     -->
+ <CamProfiles>
+     <BufferReq horstride="16" verstride="16" />
+     <NV21_InternalFormat
+         SmtPreview="yuv422i-uyvy" SmtRecording="yuv422i-uyvy"
+         DxoPreview="yuv420sp" DxoRecording="yuv420sp-nv12" />
+
+     <CamConfig sensorname="s5k4ecgx">
+         <BoardConfig
+             previewbufcnt="9" stillbufcnt="3"
+             videobufcnt="9"
+             maxpreviewwidth="1280" maxpreviewheight="960"
+             horviewangle="50"   verviewangle="50"
+             productname="TAB-A02"/>
+         <PreviewConfig>
+             <PreviewFormat format="yuv420sp"/>
+             <PreviewFormat format="yuv420p"/>
+             <PreviewSize width="176"  height="144" />
+             <PreviewSize width="320"  height="240" />
+             <PreviewSize width="640"  height="480" />
+             <PreviewSize width="1024" height="768" />
+             <PreviewSize width="1280" height="960" />
+             <PreviewSize width="720"  height="480" />
+             <PreviewSize width="1280" height="720" />
+         </PreviewConfig>
+         <PictureConfig>
+             <!--PictureFormat format="jpeg"/-->
+             <PictureSize width="176"  height="144" />
+             <PictureSize width="320"  height="240" />
+             <PictureSize width="640"  height="480" />
+             <PictureSize width="1024" height="768" />
+             <PictureSize width="1280" height="960" />
+             <PictureSize width="2560" height="1920"/>
+             <PictureSize width="720"  height="480" />
+             <PictureSize width="1280" height="720" />
+         </PictureConfig>
+
+         <VideoRecordingConfig>
+             <!--VideoFormat format="yuv420p-i420"/-->
+             <!--VideoFormat format="yuv420sp"/-->
+             <VideoSize width="720"  height="480"/>
+             <VideoSize width="1280" height="720"/>
+         </VideoRecordingConfig>
+     </CamConfig>
+
+</CamProfiles>
