@@ -1,4 +1,94 @@
 PRODUCT_COPY_FILES += \
+    vendor/sts/a03br/proprietary/etc/HDCP/cfg_tr.dat:system/etc/HDCP/cfg_tr.dat \
+    vendor/sts/a03br/proprietary/etc/NOTICE.html.gz:system/etc/NOTICE.html.gz \
+    vendor/sts/a03br/proprietary/etc/apns-conf-vzw.xml:system/etc/apns-conf-vzw.xml \
+    vendor/sts/a03br/proprietary/etc/apns-conf.xml:system/etc/apns-conf.xml \
+    vendor/sts/a03br/proprietary/etc/audio_acoustic_device.xml:system/etc/audio_acoustic_device.xml \
+    vendor/sts/a03br/proprietary/etc/audio_basic_element_apu.xml:system/etc/audio_basic_element_apu.xml \
+    vendor/sts/a03br/proprietary/etc/audio_basic_element_codec.xml:system/etc/audio_basic_element_codec.xml \
+    vendor/sts/a03br/proprietary/etc/audio_effect_config.xml:system/etc/audio_effect_config.xml \
+    vendor/sts/a03br/proprietary/etc/audio_effects.conf:system/etc/audio_effects.conf \
+    vendor/sts/a03br/proprietary/etc/audio_gain_config.xml:system/etc/audio_gain_config.xml \
+    vendor/sts/a03br/proprietary/etc/audio_gain_config_right.xml:system/etc/audio_gain_config_right.xml \
+    vendor/sts/a03br/proprietary/etc/audio_path_config_apu.xml:system/etc/audio_path_config_apu.xml \
+    vendor/sts/a03br/proprietary/etc/audio_path_config_codec.xml:system/etc/audio_path_config_codec.xml \
+    vendor/sts/a03br/proprietary/etc/audio_path_config_codec_right.xml:system/etc/audio_path_config_codec_right.xml \
+    vendor/sts/a03br/proprietary/etc/audio_policy.conf:system/etc/audio_policy.conf \
+    vendor/sts/a03br/proprietary/etc/audio_virtualpath_config.xml:system/etc/audio_virtualpath_config.xml \
+    vendor/sts/a03br/proprietary/etc/audio_virtualpath_config_right.xml:system/etc/audio_virtualpath_config_right.xml \
+    vendor/sts/a03br/proprietary/etc/back_camera_scene.cfg:system/etc/back_camera_scene.cfg \
+    vendor/sts/a03br/proprietary/etc/bluetooth/auto_pair_devlist.conf:system/etc/bluetooth/auto_pair_devlist.conf \
+    vendor/sts/a03br/proprietary/etc/bluetooth/bt_did.conf:system/etc/bluetooth/bt_did.conf \
+    vendor/sts/a03br/proprietary/etc/bluetooth/bt_stack.conf:system/etc/bluetooth/bt_stack.conf \
+    vendor/sts/a03br/proprietary/etc/camera_module_info.xml:system/etc/camera_module_info.xml \
+    vendor/sts/a03br/proprietary/etc/camera_profiles.xml:system/etc/camera_profiles.xml \
+    vendor/sts/a03br/proprietary/etc/clatd.conf:system/etc/clatd.conf \
+    vendor/sts/a03br/proprietary/etc/cm3hal.conf:system/etc/cm3hal.conf \
+    vendor/sts/a03br/proprietary/etc/common_scene_tuning.data:system/etc/common_scene_tuning.data \
+    vendor/sts/a03br/proprietary/etc/db_config.xml:system/etc/db_config.xml \
+    vendor/sts/a03br/proprietary/etc/dhcpcd/dhcpcd-hooks/20-dns.conf:system/etc/dhcpcd/dhcpcd-hooks/20-dns.conf \
+    vendor/sts/a03br/proprietary/etc/dhcpcd/dhcpcd-hooks/95-configured:system/etc/dhcpcd/dhcpcd-hooks/95-configured \
+    vendor/sts/a03br/proprietary/etc/dhcpcd/dhcpcd-run-hooks:system/etc/dhcpcd/dhcpcd-run-hooks \
+    vendor/sts/a03br/proprietary/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
+    vendor/sts/a03br/proprietary/etc/drmconfig:system/etc/drmconfig \
+    vendor/sts/a03br/proprietary/etc/event-log-tags:system/etc/event-log-tags \
+    vendor/sts/a03br/proprietary/etc/fallback_fonts.xml:system/etc/fallback_fonts.xml \
+    vendor/sts/a03br/proprietary/etc/firmware/mrvl/8887AG1_wifi_cal_data.conf:system/etc/firmware/mrvl/8887AG1_wifi_cal_data.conf \
+    vendor/sts/a03br/proprietary/etc/firmware/mrvl/8887_wifi_cal_data.conf:system/etc/firmware/mrvl/8887_wifi_cal_data.conf \
+    vendor/sts/a03br/proprietary/etc/firmware/mrvl/WlanCalData_ext_AG2.conf:system/etc/firmware/mrvl/WlanCalData_ext_AG2.conf \
+    vendor/sts/a03br/proprietary/etc/firmware/mrvl/WlanCalData_ext_AG2_DUAL_ANT.conf:system/etc/firmware/mrvl/WlanCalData_ext_AG2_DUAL_ANT.conf \
+    vendor/sts/a03br/proprietary/etc/firmware/mrvl/WlanCalData_ext_CSP_TB.conf:system/etc/firmware/mrvl/WlanCalData_ext_CSP_TB.conf \
+    vendor/sts/a03br/proprietary/etc/firmware/mrvl/WlanCalData_ext_QFN_TB.conf:system/etc/firmware/mrvl/WlanCalData_ext_QFN_TB.conf \
+    vendor/sts/a03br/proprietary/etc/firmware/mrvl/bt_init_cfg.conf:system/etc/firmware/mrvl/bt_init_cfg.conf \
+    vendor/sts/a03br/proprietary/etc/firmware/mrvl/sd8777_uapsta.bin:system/etc/firmware/mrvl/sd8777_uapsta.bin \
+    vendor/sts/a03br/proprietary/etc/firmware/mrvl/sd8787_uapsta.bin:system/etc/firmware/mrvl/sd8787_uapsta.bin \
+    vendor/sts/a03br/proprietary/etc/firmware/mrvl/sd8801_uapsta.bin:system/etc/firmware/mrvl/sd8801_uapsta.bin \
+    vendor/sts/a03br/proprietary/etc/firmware/mrvl/sd8887_bt_a0.bin:system/etc/firmware/mrvl/sd8887_bt_a0.bin \
+    vendor/sts/a03br/proprietary/etc/firmware/mrvl/sd8887_bt_a2.bin:system/etc/firmware/mrvl/sd8887_bt_a2.bin \
+    vendor/sts/a03br/proprietary/etc/firmware/mrvl/sd8887_uapsta.bin:system/etc/firmware/mrvl/sd8887_uapsta.bin \
+    vendor/sts/a03br/proprietary/etc/firmware/mrvl/sd8887_uapsta_a2.bin:system/etc/firmware/mrvl/sd8887_uapsta_a2.bin \
+    vendor/sts/a03br/proprietary/etc/firmware/mrvl/sd8887_wlan_a0.bin:system/etc/firmware/mrvl/sd8887_wlan_a0.bin \
+    vendor/sts/a03br/proprietary/etc/firmware/mrvl/sd8887_wlan_a2.bin:system/etc/firmware/mrvl/sd8887_wlan_a2.bin \
+    vendor/sts/a03br/proprietary/etc/firmware/mrvl/w8887d.bin:system/etc/firmware/mrvl/w8887d.bin \
+    vendor/sts/a03br/proprietary/etc/firmware/mrvl/w8887d_SDIO_A0.bin:system/etc/firmware/mrvl/w8887d_SDIO_A0.bin \
+    vendor/sts/a03br/proprietary/etc/firmware/mrvl/w8887o.bin:system/etc/firmware/mrvl/w8887o.bin \
+    vendor/sts/a03br/proprietary/etc/firmware/mrvl/w8887o_SDIO_A0.bin:system/etc/firmware/mrvl/w8887o_SDIO_A0.bin \
+    vendor/sts/a03br/proprietary/etc/firmware/mrvl/wifi_init_cfg.conf:system/etc/firmware/mrvl/wifi_init_cfg.conf \
+    vendor/sts/a03br/proprietary/etc/fmhal.cfg:system/etc/fmhal.cfg \
+    vendor/sts/a03br/proprietary/etc/fonts.xml:system/etc/fonts.xml \
+    vendor/sts/a03br/proprietary/etc/foreground_task.xml:system/etc/foreground_task.xml \
+    vendor/sts/a03br/proprietary/etc/front_camera_scene.cfg:system/etc/front_camera_scene.cfg \
+    vendor/sts/a03br/proprietary/etc/gfx.cfg:system/etc/gfx.cfg \
+    vendor/sts/a03br/proprietary/etc/gnss_helan3.bin:system/etc/gnss_helan3.bin \
+    vendor/sts/a03br/proprietary/etc/gnss_ulc1.bin:system/etc/gnss_ulc1.bin \
+    vendor/sts/a03br/proprietary/etc/gps.conf:system/etc/gps.conf \
+    vendor/sts/a03br/proprietary/etc/hosts:system/etc/hosts \
+    vendor/sts/a03br/proprietary/etc/largeheaplist.xml:system/etc/largeheaplist.xml \
+    vendor/sts/a03br/proprietary/etc/media_codecs.xml:system/etc/media_codecs.xml \
+    vendor/sts/a03br/proprietary/etc/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
+    vendor/sts/a03br/proprietary/etc/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
+    vendor/sts/a03br/proprietary/etc/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
+    vendor/sts/a03br/proprietary/etc/media_profiles.xml:system/etc/media_profiles.xml \
+    vendor/sts/a03br/proprietary/etc/mkshrc:system/etc/mkshrc \
+    vendor/sts/a03br/proprietary/etc/mrvl_agps_default.conf:system/etc/mrvl_agps_default.conf \
+    vendor/sts/a03br/proprietary/etc/mrvl_gps_platform.conf:system/etc/mrvl_gps_platform.conf \
+    vendor/sts/a03br/proprietary/etc/mrvlfm-amon.cfg:system/etc/mrvlfm-amon.cfg \
+    vendor/sts/a03br/proprietary/etc/mrvlfm-horus.cfg:system/etc/mrvlfm-horus.cfg \
+    vendor/sts/a03br/proprietary/etc/pipeline_config.xml:system/etc/pipeline_config.xml \
+    vendor/sts/a03br/proprietary/etc/platform_audio_config.xml:system/etc/platform_audio_config.xml \
+    vendor/sts/a03br/proprietary/etc/powerhal.conf:system/etc/powerhal.conf \
+    vendor/sts/a03br/proprietary/etc/powerpolicy.pxa1928.xml:system/etc/powerpolicy.pxa1928.xml \
+    vendor/sts/a03br/proprietary/etc/powerpolicy.xml:system/etc/powerpolicy.xml \
+    vendor/sts/a03br/proprietary/etc/preloaded-classes:system/etc/preloaded-classes \
+    vendor/sts/a03br/proprietary/etc/pxa_testcfg.ini:system/etc/pxa_testcfg.ini \
+    vendor/sts/a03br/proprietary/etc/rom.bin:system/etc/rom.bin \
+    vendor/sts/a03br/proprietary/etc/spn-conf.xml:system/etc/spn-conf.xml \
+    vendor/sts/a03br/proprietary/etc/system_fonts.xml:system/etc/system_fonts.xml \
+    vendor/sts/a03br/proprietary/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
+    vendor/sts/a03br/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
+    vendor/sts/a03br/proprietary/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
+    vendor/sts/a03br/proprietary/idc/rohm_bu21025.idc:system/idc/rohm_bu21025.idc \
+    vendor/sts/a03br/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
     vendor/sts/a03br/proprietary/bin/IMLLog:system/bin/IMLLog \
     vendor/sts/a03br/proprietary/bin/MarvellWirelessDaemon:system/bin/MarvellWirelessDaemon \
     vendor/sts/a03br/proprietary/bin/apather_c:system/bin/apather_c \
@@ -211,8 +301,6 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/lib64/hw/gralloc.default.so:system/lib64/hw/gralloc.default.so \
     vendor/sts/a03br/proprietary/lib64/hw/power.default.so:system/lib64/hw/power.default.so \
     vendor/sts/a03br/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so
-
-
 
 
 #     vendor/sts/a03br/proprietary/bin/applypatch:system/bin/applypatch \
