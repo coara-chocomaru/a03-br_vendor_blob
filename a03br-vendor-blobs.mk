@@ -270,9 +270,6 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/lib64/libvcm.so:system/lib64/libvcm.so \
     vendor/sts/a03br/proprietary/lib64/libwpa_client.so:system/lib64/libwpa_client.so \
     vendor/sts/a03br/proprietary/lib64/libwtpsp_ss.so:system/lib64/libwtpsp_ss.so \
-    vendor/sts/a03br/proprietary/etc/seccomp_policy/configstore@1.1.policy:system/etc/seccomp_policy/configstore@1.1.policy \
-    vendor/sts/a03br/proprietary/etc/seccomp_policy/mediacodec.policy:system/etc/seccomp_policy/mediacodec.policy \
-    vendor/sts/a03br/proprietary/etc/seccomp_policy/mediaextractor.policy:system/etc/seccomp_policy/mediaextractor.policy \
     vendor/sts/a03br/proprietary/vendor/Khronos/OpenCL/vendors/GPU_Vivante.icd:system/vendor/Khronos/OpenCL/vendors/GPU_Vivante.icd \
     vendor/sts/a03br/proprietary/lib64/libxml2.so:system/lib64/libxml2.so \
     vendor/sts/a03br/proprietary/lib/libxml2.so:system/lib/libxml2.so \
