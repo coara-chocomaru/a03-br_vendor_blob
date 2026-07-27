@@ -71,10 +71,8 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/etc/largeheaplist.xml:system/etc/largeheaplist.xml \
     vendor/sts/a03br/proprietary/etc/media_codecs.xml:system/etc/media_codecs.xml \
     vendor/sts/a03br/proprietary/etc/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
-    vendor/sts/a03br/proprietary/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
     vendor/sts/a03br/proprietary/etc/mrvlfm-amon.cfg:system/etc/mrvlfm-amon.cfg \
     vendor/sts/a03br/proprietary/etc/mrvlfm-horus.cfg:system/etc/mrvlfm-horus.cfg \
-    vendor/sts/a03br/proprietary/etc/mtk_omx_core.cfg:system/etc/mtk_omx_core.cfg \
     vendor/sts/a03br/proprietary/etc/partition_permission.sh:system/etc/partition_permission.sh \
     vendor/sts/a03br/proprietary/etc/pipeline_config.xml:system/etc/pipeline_config.xml \
     vendor/sts/a03br/proprietary/etc/platform_audio_config.xml:system/etc/platform_audio_config.xml \
