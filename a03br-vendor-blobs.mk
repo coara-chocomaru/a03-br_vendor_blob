@@ -106,6 +106,13 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/bin/mlan2040coex:system/bin/mlan2040coex \
     vendor/sts/a03br/proprietary/bin/mlanconfig:system/bin/mlanconfig \
     vendor/sts/a03br/proprietary/bin/mlanutl:system/bin/mlanutl \
+    vendor/sts/a03br/proprietary/bin/mlaninit.sh:system/bin/mlaninit.sh \
+    vendor/sts/a03br/proprietary/bin/load_prod_8787.sh:system/bin/load_prod_8787.sh \
+    vendor/sts/a03br/proprietary/bin/load_mfg_8787.sh:system/bin/load_mfg_8787.sh \
+    vendor/sts/a03br/proprietary/bin/unload_8787.sh:system/bin/unload_8787.sh \
+    vendor/sts/a03br/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
+    vendor/sts/a03br/proprietary/bin/hostapd:system/bin/hostapd \
+    vendor/sts/a03br/proprietary/bin/dhcpcd:system/bin/dhcpcd \
     vendor/sts/a03br/proprietary/bin/setprod:system/bin/setprod \
     vendor/sts/a03br/proprietary/bin/phservice:system/bin/phservice \
     vendor/sts/a03br/proprietary/bin/ts_calibrator:system/bin/ts_calibrator \
@@ -274,6 +281,10 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/lib/libxml2.so:system/lib/libxml2.so \
     vendor/sts/a03br/proprietary/lib64/libmvmem.so:system/lib64/libmvmem.so \
     vendor/sts/a03br/proprietary/lib/libmvmem.so:system/lib/libmvmem.so \
+    vendor/sts/a03br/proprietary/lib/libcrypto.so:system/lib/libcrypto.so \
+    vendor/sts/a03br/proprietary/lib/libssl.so:system/lib/libssl.so \
+    vendor/sts/a03br/proprietary/lib64/libcrypto.so:system/lib64/libcrypto.so \
+    vendor/sts/a03br/proprietary/lib64/libssl.so:system/lib64/libssl.so \
     vendor/sts/a03br/proprietary/lib64/egl/egl.cfg:system/lib64/egl/egl.cfg \
     vendor/sts/a03br/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
     vendor/sts/a03br/proprietary/lib64/egl/libGLES_android.so:system/lib64/egl/libGLES_android.so \
@@ -304,10 +315,8 @@ PRODUCT_COPY_FILES += \
 #     vendor/sts/a03br/proprietary/bin/bootanimation:system/bin/bootanimation \
 #     vendor/sts/a03br/proprietary/bin/clatd:system/bin/clatd \
 #     vendor/sts/a03br/proprietary/bin/cploader:system/bin/cploader \
-#     vendor/sts/a03br/proprietary/bin/dhcpcd:system/bin/dhcpcd \
 #     vendor/sts/a03br/proprietary/bin/diag:system/bin/diag \
 #     vendor/sts/a03br/proprietary/bin/diagcmd:system/bin/diagcmd \
-#     vendor/sts/a03br/proprietary/bin/hostapd:system/bin/hostapd \
 #     vendor/sts/a03br/proprietary/bin/ip:system/bin/ip \
 #     vendor/sts/a03br/proprietary/bin/ip6tables:system/bin/ip6tables \
 #     vendor/sts/a03br/proprietary/bin/iptables:system/bin/iptables \
@@ -333,7 +342,6 @@ PRODUCT_COPY_FILES += \
 #     vendor/sts/a03br/proprietary/bin/serial_cfun0:system/bin/serial_cfun0 \
 #     vendor/sts/a03br/proprietary/bin/serial_client:system/bin/serial_client \
 #     vendor/sts/a03br/proprietary/bin/tc:system/bin/tc \
-#     vendor/sts/a03br/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
 #     vendor/sts/a03br/proprietary/etc/audio_effects.conf:system/etc/audio_effects.conf \
 #     vendor/sts/a03br/proprietary/etc/audio_effects.xml:system/etc/audio_effects.xml \
 #     vendor/sts/a03br/proprietary/etc/audio_policy.conf:system/etc/audio_policy.conf \
