@@ -1,4 +1,8 @@
 PRODUCT_COPY_FILES += \
+    vendor/sts/a03br/proprietary/bin/netcfg:system/bin/netcfg \
+    vendor/sts/a03br/proprietary/bin/nvm:system/bin/nvm \
+    vendor/sts/a03br/proprietary/bin/nvmcp:system/bin/nvmcp \
+    vendor/sts/a03br/proprietary/bin/phs_cmd:system/bin/phs_cmd \
     vendor/sts/a03br/proprietary/etc/HDCP/cfg_tr.dat:system/etc/HDCP/cfg_tr.dat \
     vendor/sts/a03br/proprietary/etc/NOTICE.html.gz:system/etc/NOTICE.html.gz \
     vendor/sts/a03br/proprietary/etc/apns-conf-vzw.xml:system/etc/apns-conf-vzw.xml \
