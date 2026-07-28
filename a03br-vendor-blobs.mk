@@ -1,4 +1,6 @@
 PRODUCT_COPY_FILES += \
+    vendor/sts/a03br/proprietary/lib/libhardware_legacy.so:system/lib/libhardware_legacy_real.so \
+    vendor/sts/a03br/proprietary/lib64/libhardware_legacy.so:system/lib64/libhardware_legacy_real.so \
     vendor/sts/a03br/proprietary/bin/netcfg:system/bin/netcfg \
     vendor/sts/a03br/proprietary/bin/nvm:system/bin/nvm \
     vendor/sts/a03br/proprietary/bin/nvmcp:system/bin/nvmcp \
@@ -309,7 +311,10 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/lib64/hw/audio_policy.default.so:system/lib64/hw/audio_policy.default.so \
     vendor/sts/a03br/proprietary/lib64/hw/gralloc.default.so:system/lib64/hw/gralloc.default.so \
     vendor/sts/a03br/proprietary/lib64/hw/power.default.so:system/lib64/hw/power.default.so \
-    vendor/sts/a03br/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so
+    vendor/sts/a03br/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
+    vendor/sts/a03br/proprietary/shim/libhardware_legacy_arm.so:system/lib/libhardware_legacy.so \
+    vendor/sts/a03br/proprietary/shim/libhardware_legacy_arm64.so:system/lib64/libhardware_legacy.so
+
 
 
 #     vendor/sts/a03br/proprietary/bin/applypatch:system/bin/applypatch \
