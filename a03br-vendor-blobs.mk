@@ -178,7 +178,6 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/lib/libhantroewl.so:system/lib/libhantroewl.so \
     vendor/sts/a03br/proprietary/lib/libhantrohaldec.so:system/lib/libhantrohaldec.so \
     vendor/sts/a03br/proprietary/lib/libhantrohalenc.so:system/lib/libhantrohalenc.so \
-    vendor/sts/a03br/proprietary/lib/libhardware_legacy.so:system/lib/libhardware_legacy.so \
     vendor/sts/a03br/proprietary/lib/libhdr.so:system/lib/libhdr.so \
     vendor/sts/a03br/proprietary/lib/libippimgp.so:system/lib/libippimgp.so \
     vendor/sts/a03br/proprietary/lib/libippmultiexec.so:system/lib/libippmultiexec.so \
@@ -257,7 +256,6 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/lib64/libexif.so:system/lib64/libexif.so \
     vendor/sts/a03br/proprietary/lib64/libgcu.so:system/lib64/libgcu.so \
     vendor/sts/a03br/proprietary/lib64/libgpucsc.so:system/lib64/libgpucsc.so \
-    vendor/sts/a03br/proprietary/lib64/libhardware_legacy.so:system/lib64/libhardware_legacy.so \
     vendor/sts/a03br/proprietary/lib64/libhawk.so:system/lib64/libhawk.so \
     vendor/sts/a03br/proprietary/lib64/libippmultiexec.so:system/lib64/libippmultiexec.so \
     vendor/sts/a03br/proprietary/lib64/libjpeg.so:system/lib64/libjpeg.so \
