@@ -88,7 +88,6 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     vendor/sts/a03br/proprietary/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/sts/a03br/proprietary/idc/rohm_bu21025.idc:system/usr/idc/rohm_bu21025.idc \
-    vendor/sts/a03br/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
     vendor/sts/a03br/proprietary/bin/IMLLog:system/bin/IMLLog \
     vendor/sts/a03br/proprietary/bin/MarvellWirelessDaemon:system/bin/MarvellWirelessDaemon \
     vendor/sts/a03br/proprietary/bin/apather_c:system/bin/apather_c \
