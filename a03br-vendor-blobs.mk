@@ -314,10 +314,7 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/lib/libhardware_legacy.so:system/lib/libhardware_legacy.so \
     vendor/sts/a03br/proprietary/lib64/libhardware_legacy.so:system/lib64/libhardware_legacy.so \
     vendor/sts/a03br/proprietary/shim/libwifi-service_arm.so:system/lib/libwifi-service.so \
-    vendor/sts/a03br/proprietary/shim/libwifi-service_arm64.so:system/lib64/libwifi-service.so \
-    vendor/sts/a03br/proprietary/bin/ip:system/bin/ip \
-    vendor/sts/a03br/proprietary/bin/ip6tables:system/bin/ip6tables \
-    vendor/sts/a03br/proprietary/bin/iptables:system/bin/iptables
+    vendor/sts/a03br/proprietary/shim/libwifi-service_arm64.so:system/lib64/libwifi-service.so
 
 
 
