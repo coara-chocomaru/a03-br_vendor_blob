@@ -1,4 +1,5 @@
 PRODUCT_COPY_FILES += \
+    vendor/sts/a03br/proprietary/lib/libbt-vendor.so:system/lib/libbt-vendor.so \
     vendor/sts/a03br/proprietary/bin/netcfg:system/bin/netcfg \
     vendor/sts/a03br/proprietary/bin/nvm:system/bin/nvm \
     vendor/sts/a03br/proprietary/bin/nvmcp:system/bin/nvmcp \
