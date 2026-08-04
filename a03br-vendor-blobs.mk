@@ -1,6 +1,5 @@
 PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/bin/atcmdsrv:system/bin/atcmdsrv \
-    vendor/sts/a03br/proprietary/lib/libbt-vendor.so:system/lib/libbt-vendor.so \
     vendor/sts/a03br/proprietary/bin/netcfg:system/bin/netcfg \
     vendor/sts/a03br/proprietary/bin/nvm:system/bin/nvm \
     vendor/sts/a03br/proprietary/bin/nvmcp:system/bin/nvmcp \
@@ -225,6 +224,7 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/lib64/PowerHint/hint_video_start.so:system/lib64/PowerHint/hint_video_start.so \
     vendor/sts/a03br/proprietary/lib64/PowerHint/hint_wfd.so:system/lib64/PowerHint/hint_wfd.so \
     vendor/sts/a03br/proprietary/lib64/PowerHint/hint_wifi.so:system/lib64/PowerHint/hint_wifi.so \
+    vendor/sts/a03br/proprietary/lib64/PowerHint/hint_phone.so:system/lib64/PowerHint/hint_phone.so \
     vendor/sts/a03br/proprietary/lib64/PowerHint/operator_cpu.so:system/lib64/PowerHint/operator_cpu.so \
     vendor/sts/a03br/proprietary/lib64/PowerHint/operator_cpuhotplug.so:system/lib64/PowerHint/operator_cpuhotplug.so \
     vendor/sts/a03br/proprietary/lib64/PowerHint/operator_ddr.so:system/lib64/PowerHint/operator_ddr.so \
