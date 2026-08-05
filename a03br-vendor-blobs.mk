@@ -1,4 +1,21 @@
 PRODUCT_COPY_FILES += \
+    vendor/sts/a03br/proprietary/lib/libOpenCL_MRVL.so:system/lib/libOpenCL_MRVL.so \
+    vendor/sts/a03br/proprietary/lib/libasound.so:system/lib/libasound.so \
+    vendor/sts/a03br/proprietary/lib/libaudiopolicymanager.so:system/lib/libaudiopolicymanager.so \
+    vendor/sts/a03br/proprietary/lib/libaudiopolicymanagerdefault.so:system/lib/libaudiopolicymanagerdefault.so \
+    vendor/sts/a03br/proprietary/lib/libbt-vendor.so:system/lib/libbt-vendor.so \
+    vendor/sts/a03br/proprietary/lib/libcodecIPC.so:system/lib/libcodecIPC.so \
+    vendor/sts/a03br/proprietary/lib/libcodecIPCservice.so:system/lib/libcodecIPCservice.so \
+    vendor/sts/a03br/proprietary/lib/libmrvlhdcp.so:system/lib/libmrvlhdcp.so \
+    vendor/sts/a03br/proprietary/lib/libstagefright_soft_mrvl_mjpegdec.so:system/lib/libstagefright_soft_mrvl_mjpegdec.so \
+    vendor/sts/a03br/proprietary/lib/libstagefright_soft_mrvl_mpg123dec.so:system/lib/libstagefright_soft_mrvl_mpg123dec.so \
+    vendor/sts/a03br/proprietary/lib/soundfx/libmrvlpreprocessing.so:system/lib/soundfx/libmrvlpreprocessing.so \
+    vendor/sts/a03br/proprietary/lib64/libstagefright_soft_mrvl_mjpegdec.so:system/lib64/libstagefright_soft_mrvl_mjpegdec.so \
+    vendor/sts/a03br/proprietary/lib64/libOpenCL_MRVL.so:system/lib64/libOpenCL_MRVL.so \
+    vendor/sts/a03br/proprietary/lib64/libaudiopolicymanager.so:system/lib64/libaudiopolicymanager.so \
+    vendor/sts/a03br/proprietary/lib64/libaudiopolicymanagerdefault.so:system/lib64/libaudiopolicymanagerdefault.so \
+    vendor/sts/a03br/proprietary/lib64/libcodecIPC.so:system/lib64/libcodecIPC.so \
+    vendor/sts/a03br/proprietary/lib64/libcodecIPCservice.so:system/lib64/libcodecIPCservice.so \
     vendor/sts/a03br/proprietary/bin/atcmdsrv:system/bin/atcmdsrv \
     vendor/sts/a03br/proprietary/bin/netcfg:system/bin/netcfg \
     vendor/sts/a03br/proprietary/bin/nvm:system/bin/nvm \
