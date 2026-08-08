@@ -316,7 +316,6 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/lib/hw/audio.r_submix.default.so:system/lib/hw/audio.r_submix.default.so \
     vendor/sts/a03br/proprietary/lib/hw/audio.usb.default.so:system/lib/hw/audio.usb.default.so \
     vendor/sts/a03br/proprietary/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \
-    vendor/sts/a03br/proprietary/lib/hw/bluetooth.default.so:system/lib/hw/bluetooth.default.so \
     vendor/sts/a03br/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
     vendor/sts/a03br/proprietary/lib/hw/gralloc.mrvl.so:system/lib/hw/gralloc.mrvl.so \
     vendor/sts/a03br/proprietary/lib/hw/hwcomposer.mrvl.so:system/lib/hw/hwcomposer.mrvl.so \
@@ -335,7 +334,7 @@ PRODUCT_COPY_FILES += \
     vendor/sts/a03br/proprietary/shim/libwifi-service_arm64.so:system/lib64/libwifi-service.so
 
 
-
+#     vendor/sts/a03br/proprietary/lib/hw/bluetooth.default.so:system/lib/hw/bluetooth.default.so \
 #     vendor/sts/a03br/proprietary/bin/applypatch:system/bin/applypatch \
 #     vendor/sts/a03br/proprietary/bin/atcmdsrv:system/bin/atcmdsrv \
 #     vendor/sts/a03br/proprietary/bin/bootanimation:system/bin/bootanimation \
