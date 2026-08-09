@@ -1,4 +1,18 @@
 PRODUCT_COPY_FILES += \
+    vendor/sts/a03br/proprietary/lib64/libLLVM.so:system/lib64/libLLVM.so \
+    vendor/sts/a03br/proprietary/lib64/libRS.so:system/lib64/libRS.so \
+    vendor/sts/a03br/proprietary/lib64/libRSCpuRef.so:system/lib64/libRSCpuRef.so \
+    vendor/sts/a03br/proprietary/lib64/libRSDriver.so:system/lib64/libRSDriver.so \
+    vendor/sts/a03br/proprietary/lib64/libRScpp.so:system/lib64/libRScpp.so \
+    vendor/sts/a03br/proprietary/lib64/libbcc.so:system/lib64/libbcc.so \
+    vendor/sts/a03br/proprietary/lib64/libbcinfo.so:system/lib64/libbcinfo.so \
+    vendor/sts/a03br/proprietary/lib/libLLVM.so:system/lib/libLLVM.so \
+    vendor/sts/a03br/proprietary/lib/libRS.so:system/lib/libRS.so \
+    vendor/sts/a03br/proprietary/lib/libRSCpuRef.so:system/lib/libRSCpuRef.so \
+    vendor/sts/a03br/proprietary/lib/libRSDriver.so:system/lib/libRSDriver.so \
+    vendor/sts/a03br/proprietary/lib/libRScpp.so:system/lib/libRScpp.so \
+    vendor/sts/a03br/proprietary/lib/libbcc.so:system/lib/libbcc.so \
+    vendor/sts/a03br/proprietary/lib/libbcinfo.so:system/lib/libbcinfo.so \
     vendor/sts/a03br/proprietary/lib/libOpenCL_MRVL.so:system/lib/libOpenCL_MRVL.so \
     vendor/sts/a03br/proprietary/lib/libasound.so:system/lib/libasound.so \
     vendor/sts/a03br/proprietary/lib/libaudiopolicymanager.so:system/lib/libaudiopolicymanager.so \
